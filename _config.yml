@@ -1,5 +1,5 @@
 title: "Fiona Roy"
-author: "Fiona"
+author: "Fiona Roy"
 description: "Complexity made simple"
 permalink: /:title/
 lang: "en"
@@ -22,8 +22,6 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: "Mail", icon: envelope, url: "mailto:firoyj@gmail.com"}
   - {title: "Github", icon: github, url: "https://github.com/firoyj"}
-  - {title: "LinkedIn", icon: linkedin, url: "https://www.linkedin.com/in/fiona-roy-technical-writer/"}
-  - {title: "X", icon: twitter, url: "https://twitter.com/Cryptotraduz"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
