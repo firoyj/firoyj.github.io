@@ -8,5 +8,5 @@ This showcases some of my technical writing samples. These include a tutorial, h
 {% if site.show_excerpts %}
   {% include home.html %}
 {% else %}
-  {% include archive.html title="Posts" %}
+  {% include archive.html title="Pages" %}
 {% endif %}
