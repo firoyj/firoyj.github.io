@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Writing Samples"
+title: ""
 ---
 
 This showcases some of my technical writing samples. These include a tutorial, how-to guide, high-level overview and an explanation. This showcases some of my technical writing samples. These include a tutorial, how-to guide, high-level overview and an explanation. This showcases some of my technical writing samples. These include a tutorial, how-to guide, high-level overview and an explanation. This showcases some of my technical writing samples. These include a tutorial, how-to guide, high-level overview and an explanation. This showcases some of my technical writing samples. These include a tutorial, how-to guide, high-level overview and an explanation. This showcases some of my technical writing samples. These include a tutorial, how-to guide, high-level overview and an explanation.
