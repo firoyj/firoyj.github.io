@@ -25,7 +25,9 @@ external:                  # shows a footer with social links - for available ic
   - {title: "GitHub", icon: github, url: "https://github.com/firoyj"}
   - {title: "LinkedIn", icon: linkedin, url: "https://www.linkedin.com/in/fiona-roy-technical-writer/"}
   - {title: "X", icon: twitter, url: "https://twitter.com/Cryptotraduz"}
-
+include:
+ - _pages
+ 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
 #  isso_domain: ""         # see https://posativ.org/isso/
