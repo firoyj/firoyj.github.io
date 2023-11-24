@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Portfolio - Technical Writing"
+title: "Home"
 ---
 
 Information about me. Should it be here maybe
