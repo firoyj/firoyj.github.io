@@ -3,4 +3,10 @@ layout: default
 title: "Blog"
 ---
 
-Information about me. Should it be here maybe
+this title will be changed to samples of technical writing
+
+{% if site.show_excerpts %}
+  {% include home.html %}
+{% else %}
+  {% include archive.html title="Posts" %}
+{% endif %}
