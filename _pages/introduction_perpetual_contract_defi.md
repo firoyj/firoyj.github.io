@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Introduction to Perpetual Contracts DeFi
+title: "Introduction to Perpetual Contracts DeFi"
 ---
 
 # Understanding Perpetual Contracts: A Technical Overview
