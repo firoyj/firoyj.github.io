@@ -8,14 +8,3 @@
     </a>
   {%- endfor -%}
 </nav>
-
-{% if site.external %}
-  <div class="social-links">
-    {%- for item in site.external -%}
-      <a href="{{ item.url | relative_url }}" {% if item.icon %}class="icon {{ item.icon }}"{% endif %}>
-        {%- if item.icon -%}<svg aria-label="{{ item.title }}" class="icon"><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{ item.icon }}"></use></svg>{%- else -%}{{ item.title }}{%- endif -%}
-      </a>
-    {%- endfor -%}
-  </div>
-{% endif %}
-
