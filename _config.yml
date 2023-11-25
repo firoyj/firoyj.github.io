@@ -11,14 +11,12 @@ date_format: "%B %d, %Y"
 show_excerpts: true        # show article excerpts on the home page
 show_frame: true           # adds a gray frame to the site
 show_sidebar: true        # show a sidebar instead of the usual header
-minimal: false             # use a dark header
+minimal: true             # use a dark header
 
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "fiona_roy_cv_technical_writer.pdf", title: "CV"}
-  - {title: "About", file: "about.md"}
-  - {title: "Writing Samples", file: "samples.md"}
   - {title: "Subgraphs", file: "tutorial_excerpt_subgraphs.md"}
   - {title: "Cross-ledger DEXA", file: "overview_excerpt_cross-ledger_dex_aggregator.md"}
 
