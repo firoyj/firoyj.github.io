@@ -8,7 +8,7 @@
     {%- assign title = item.title | default: node.title -%}
     {%- assign icon = item.icon | default: item.sidebaricon -%}
     
-    {%- unless item.exclude_from_sidebar %} {# Add this line to exclude certain items #}
+    {%- unless item.exclude_from_sidebar %}
       <a aria-label="{{ title }}" href="{{ url | relative_url }}" {% if url == page.url %}class="selected"{% endif %}>
         <svg aria-hidden="true" class="icon"><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{ icon }}"></use></svg>
         <span aria-hidden="true">{{ title }}</span>
@@ -22,7 +22,7 @@
     {%- assign title = item.title | default: node.title -%}
     {%- assign icon = item.icon | default: item.sidebaricon -%}
     
-    {%- unless item.exclude_from_sidebar %} {# Add this line to exclude certain items #}
+    {%- unless item.exclude_from_sidebar %}
       <a aria-label="{{ title }}" href="{{ url | relative_url }}" {% if url == page.url %}class="selected"{% endif %}>
         <svg aria-hidden="true" class="icon"><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{ icon }}"></use></svg>
         <span aria-hidden="true">{{ title }}</span>
