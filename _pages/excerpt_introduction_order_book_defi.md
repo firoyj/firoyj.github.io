@@ -1,8 +1,11 @@
+---
+title:  "Excerpt Introduction to Order Book"
+mathjax: true
+layout: page
+categories: github, website
+---
+
 ## Purpose of the Order Book
----
-layout: default
-title: Excerpt Introduction to Order Book
----
 
 The Order Book’s responsibility is to handle users' requests - to receive them from frontend, validate, and save them in the database. it consists of _3 steps_:
 
