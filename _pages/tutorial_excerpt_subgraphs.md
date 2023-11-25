@@ -4,10 +4,6 @@ mathjax: true
 layout: page
 categories: github, website
 ---
----
-layout: default
-title: Excerpt of Tutorial on Subgraphs DeFi
----
 
 # Subgraphs Simplified: A Practical Tutorial
 
