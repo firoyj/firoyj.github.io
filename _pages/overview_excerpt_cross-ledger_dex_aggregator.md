@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Excerpt of Overview of Cross-ledger DEX Aggregator
 ---
 
