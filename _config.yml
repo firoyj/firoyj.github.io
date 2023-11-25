@@ -1,7 +1,7 @@
 title: "Fiona Roy"
 author: "Fiona Roy"
 description: "Complexity made simple"
-permalink: /posts/:title
+permalink: /:title
 lang: "en"
 excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
@@ -10,7 +10,7 @@ date_format: "%B %d, %Y"
 
 show_excerpts: false        # show article excerpts on the home page
 show_frame: true           # adds a gray frame to the site
-show_sidebar: false      # show a sidebar instead of the usual header
+show_sidebar: false        # show a sidebar instead of the usual header
 minimal: true             # use a dark header
 
 # Menu
@@ -21,7 +21,6 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {title: "Cross-ledger DEXA", file: "overview_excerpt_cross-ledger_dex_aggregator.md"}
   - {title: "Perpetual Contracts", file: "introduction_perpetual_contract_defi.md"}
   - {title: "Guide to Request Signing", file: " guide_request_signing.md"}
- 
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: "E-mail", icon: envelope, url: "mailto:firoyj@gmail.com"}
