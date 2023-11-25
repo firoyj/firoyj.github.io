@@ -1,6 +1,8 @@
 ---
-layout: default
-title: Guide to Request Signing
+title:  "Guide to Request Signing"
+mathjax: true
+layout: page
+categories: github, website
 ---
 
 # Guide to Request Signing
