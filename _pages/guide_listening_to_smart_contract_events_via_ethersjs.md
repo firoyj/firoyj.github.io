@@ -1,10 +1,11 @@
 ---
-layout: default
-title: Guide Listening to Smart Contract Events via Ethers
+title:  "Guide Listening to Smart Contract Events via Ethers"
+mathjax: true
+layout: page
+categories: github, website
 ---
 
 # Listening to smart contract events from a frontend DApp via Ethers.js
-
 
 This guide will walk you through the necessary steps to listen to smart contract events via ethers.js. These steps cover the installation and configuration of essential tools and technologies.
 
