@@ -1,3 +1,9 @@
+---
+title: Projects
+layout: page
+---
+Here are a selection of writing samples, covering step-by-step tutorial, overview and explanation.
+
 | [**dex_aggregator**](/dex_aggregator) | An iOS app for calculating pace, time, speed, and distance combinations. |
 | [**order_book**](/order_book) | An iOS app for generating secure, easy to use, passwords. |
 | [**perpetual_contracts**](/perpetual_contracts) | An iOS app for cataloging real ales. |
