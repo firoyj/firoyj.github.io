@@ -16,13 +16,10 @@ minimal: true             # use a dark header
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
+  - {file: "index.html"}
   - {file: "fiona_roy_cv_technical_writer.pdf", title: "CV"}
-  - {title: "Subgraphs", file: "tutorial_excerpt_subgraphs.md"}
-  - {title: "Cross-ledger DEXA", file: "overview_excerpt_cross-ledger_dex_aggregator.md"}
-  - {title: "Perpetual Contracts", file: "introduction_perpetual_contract_defi.md"}
-  - {title: "Guide to Request Signing", file: "guide_request_signing.md"}
-  - {title: "Order Book", file: "excerpt_introduction_order_book_defi.md"}
- 
+  - {file: "projects.md"}
+  - {file: "about.md"} #, icon: address-card}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: "E-mail", icon: envelope, url: "mailto:firoyj@gmail.com"}
