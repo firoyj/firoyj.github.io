@@ -1,7 +1,7 @@
 title: "Fiona Roy"
 author: "Fiona Roy"
 description: "Complexity made simple"
-permalink: /:title
+permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
@@ -28,11 +28,6 @@ external:                  # shows a footer with social links - for available ic
   - {title: "LinkedIn", icon: linkedin, url: "https://www.linkedin.com/in/fiona-roy-technical-writer/"}
   - {title: "X", icon: twitter, url: "https://twitter.com/Cryptotraduz"}
 
-include:
- - _pages
-
-exclude:
- - _posts
  
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
