@@ -1,7 +1,7 @@
 title: "Fiona Roy"
 author: "Fiona Roy"
 description: "Complexity made simple"
-# permalink: /:collection/:path/
+permalink: /:collection/:path/
 lang: "en"
 excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
