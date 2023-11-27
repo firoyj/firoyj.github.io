@@ -1,5 +1,5 @@
 ---
-title:  "Excerpt Introduction to Order Book"
+title: "Order Book"
 mathjax: true
 layout: page
 categories: github, website
