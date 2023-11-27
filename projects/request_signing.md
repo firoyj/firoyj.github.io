@@ -1,5 +1,5 @@
 ---
-title:  "Guide to Request Signing"
+title: "Request Signing"
 mathjax: true
 layout: page
 categories: github, website
