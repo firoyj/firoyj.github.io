@@ -1,5 +1,5 @@
 ---
-title:  "Guide Listening to Smart Contract Events via Ethers"
+title: "Smart Contract Events"
 mathjax: true
 layout: page
 categories: github, website
