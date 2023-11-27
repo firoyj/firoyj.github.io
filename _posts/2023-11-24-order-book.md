@@ -1,7 +1,7 @@
 ---
 title: "Order Book"
 mathjax: true
-layout: page
+layout: post
 categories: github, website
 ---
 
