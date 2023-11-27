@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Excerpt of Overview of Cross-ledger DEX Aggregator"
+title: "DEX Aggregator"
 ---
 
 # Exploring Cross-ledger DEX Aggregation with XXXXX Protocol and X  Token
