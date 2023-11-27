@@ -1,5 +1,5 @@
 ---
-title:  "Introduction to Subgraphs"
+title:  "Subgraphs"
 mathjax: true
 layout: page
 categories: github, website
