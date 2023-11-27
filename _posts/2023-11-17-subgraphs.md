@@ -1,7 +1,7 @@
 ---
 title:  "Subgraphs"
 mathjax: true
-layout: page
+layout: post
 categories: github, website
 ---
 
