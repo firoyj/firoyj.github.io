@@ -3,6 +3,7 @@ title:  "Subgraphs"
 mathjax: true
 layout: post
 categories: github, website
+excerpt: "This is a custom excerpt for your post."
 ---
 
 # Subgraphs Simplified: A Practical Tutorial
