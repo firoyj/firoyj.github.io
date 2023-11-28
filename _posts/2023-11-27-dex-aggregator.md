@@ -4,6 +4,10 @@ title: "DEX Aggregator"
 excerpt: "This is a custom excerpt for your post."
 ---
 
+{% if post.content.size > post.excerpt.size %}
+<p><a href="{{ post.url }}">(more...)</a></p>
+{% endif %}
+
 # Exploring Cross-ledger DEX Aggregation with XXXXX Protocol and X  Token
 
 > Note: For confidentiality purposes, the protocol name is expressed here as _XXXXX_ and the token is expressed as _X TOKEN_
