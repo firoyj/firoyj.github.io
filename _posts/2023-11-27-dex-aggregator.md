@@ -1,12 +1,11 @@
 ---
 layout: post
 title: "DEX Aggregator"
-excerpt: "This is a custom excerpt for your post."
----
+excerpt: "# Exploring Cross-ledger DEX Aggregation<br>_XXXXX_ Protocol delivers a sophisticated cross-ledger DEX aggregator, enabling optimal execution through market aggregation. By tapping into Automated Market Makers (AMMs) across multiple chains, it achieves a dark pool-like order execution. Users can seamlessly initiate a swap of any supported token and the protocol finds the best route for that swap, whether it's a simple AMM swap or a more complex movement of tokens across different networks to achieve the most favorable outcome.
 
-{% if post.content.size > post.excerpt.size %}
-<p><a href="{{ post.url }}">(more...)</a></p>
-{% endif %}
+The protocol excels in 3 fundamental features:
+"
+---
 
 # Exploring Cross-ledger DEX Aggregation with XXXXX Protocol and X  Token
 
