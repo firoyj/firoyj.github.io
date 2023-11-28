@@ -26,6 +26,12 @@ kramdown:
   entity_output     : as_char
   toc_levels        : [1, 2, 3, 4, 5, 6]
 
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
+
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: "E-mail", icon: envelope, url: "mailto:firoyj@gmail.com"}
   - {title: "GitHub", icon: github, url: "https://github.com/firoyj"}
