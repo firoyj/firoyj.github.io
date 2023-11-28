@@ -6,6 +6,10 @@ categories: github, website
 excerpt: "This is a custom excerpt for your post."
 ---
 
+{% if post.content.size > post.excerpt.size %}
+<p><a href="{{ post.url }}">(more...)</a></p>
+{% endif %}
+
 # Listening to smart contract events from a frontend DApp via Ethers.js
 
 This guide will walk you through the necessary steps to listen to smart contract events via ethers.js. These steps cover the installation and configuration of essential tools and technologies.
