@@ -3,6 +3,7 @@ title: "Order Book"
 mathjax: true
 layout: post
 categories: github, website
+excerpt: "This is a custom excerpt for your post."
 ---
 
 ## Purpose of the Order Book
