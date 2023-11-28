@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "DEX Aggregator"
-excerpt: "# Exploring Cross-ledger DEX Aggregation<br>_XXXXX_ Protocol delivers a sophisticated cross-ledger DEX aggregator, enabling optimal execution through market aggregation. By tapping into Automated Market Makers (AMMs) across multiple chains, it achieves a dark pool-like order execution. Users can seamlessly initiate a swap of any supported token and the protocol finds the best route for that swap, whether it's a simple AMM swap or a more complex movement of tokens across different networks to achieve the most favorable outcome.
+excerpt: "Exploring Cross-ledger DEX Aggregation<br>The Protocol delivers a sophisticated cross-ledger DEX aggregator, enabling optimal execution through market aggregation. By tapping into Automated Market Makers (AMMs) across multiple chains, it achieves a dark pool-like order execution. This way, users can seamlessly initiate a swap of any supported token, and the protocol finds the best route for that swap, whether it's a simple AMM swap or a more complex movement of tokens across different networks to achieve the most favorable outcome.
 
 The protocol excels in 3 fundamental features:
 "
@@ -13,7 +13,7 @@ The protocol excels in 3 fundamental features:
 
 ## Understand the Protocol
 
-_XXXXX_ Protocol delivers a sophisticated cross-ledger DEX aggregator, enabling optimal execution through market aggregation. By tapping into Automated Market Makers (AMMs) across multiple chains, it achieves a dark pool-like order execution. Users can seamlessly initiate a swap of any supported token and the protocol finds the best route for that swap, whether it's a simple AMM swap or a more complex movement of tokens across different networks to achieve the most favorable outcome.
+The Protocol delivers a sophisticated cross-ledger DEX aggregator, enabling optimal execution through market aggregation. By tapping into Automated Market Makers (AMMs) across multiple chains, it achieves a dark pool-like order execution. This way, users can seamlessly initiate a swap of any supported token and the protocol finds the best route for that swap, whether it's a simple AMM swap or a more complex movement of tokens across different networks to achieve the most favorable outcome.
 
 The protocol excels in 3 fundamental features:
 
