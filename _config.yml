@@ -17,10 +17,10 @@ minimal: true             # use a dark header
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.html"}
-  - {file: "about.md"} #, icon: address-card}
   - {file: "/fiona_roy_cv_technical_writer.pdf", title: "CV"}
+  - {file: "about.md"} #, icon: address-card}
+  - {file: "contacts.html"}
   
-
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: "E-mail", icon: envelope, url: "mailto:firoyj@gmail.com"}
   - {title: "GitHub", icon: github, url: "https://github.com/firoyj"}
