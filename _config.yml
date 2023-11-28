@@ -45,3 +45,4 @@ comments:
 
 plugins:
  - jekyll-feed
+ - jekyll-pdf-embed
