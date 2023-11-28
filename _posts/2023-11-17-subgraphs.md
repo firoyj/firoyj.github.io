@@ -3,11 +3,8 @@ title:  "Subgraphs"
 mathjax: true
 layout: post
 categories: github, website
-excerpt: "Subgraphs are ideal for the following scenarios:
-- When the blockchain you are working with is supported (note: some chains might not be supported).
-- Dealing with large volumes of historical data on a regular basis.
-- When a short delay in listing new blocks is acceptable, as subgraphs take time to catch up.
-- _Not_ for aggregating data from various sources; deploying on multiple chains simultaneously is not yet supported."
+excerpt: "Welcome to the tutorial on creating powerful Subgraphs for blockchain data analysis and manipulation. In this guide, we will walk you through the process of efficiently leveraging subgraphs and their potential applications.<br><br>
+Subgraphs offer swift access to historical blockchain data with minimal delays. They serve as off-chain data storage, equipped with a GraphQL API and virtually no limits, making data processing and manipulation a breeze. Their ease of use and effectiveness make them a valuable tool for developers."
 ---
 
 # Subgraphs Simplified: A Practical Tutorial
