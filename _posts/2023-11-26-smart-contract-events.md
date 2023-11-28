@@ -3,6 +3,7 @@ title: "Smart Contract Events"
 mathjax: true
 layout: post
 categories: github, website
+excerpt: "This is a custom excerpt for your post."
 ---
 
 # Listening to smart contract events from a frontend DApp via Ethers.js
