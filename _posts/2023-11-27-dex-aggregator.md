@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "DEX Aggregator"
+excerpt: "This is a custom excerpt for your post."
 ---
 
 # Exploring Cross-ledger DEX Aggregation with XXXXX Protocol and X  Token
