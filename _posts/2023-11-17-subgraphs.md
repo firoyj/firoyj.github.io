@@ -3,7 +3,11 @@ title:  "Subgraphs"
 mathjax: true
 layout: post
 categories: github, website
-excerpt: "This is a custom excerpt for your post."
+excerpt: "Subgraphs are ideal for the following scenarios:
+- When the blockchain you are working with is supported (note: some chains might not be supported).
+- Dealing with large volumes of historical data on a regular basis.
+- When a short delay in listing new blocks is acceptable, as subgraphs take time to catch up.
+- _Not_ for aggregating data from various sources; deploying on multiple chains simultaneously is not yet supported."
 ---
 
 # Subgraphs Simplified: A Practical Tutorial
