@@ -3,13 +3,10 @@ title: "Order Book"
 mathjax: true
 layout: post
 categories: github, website
-excerpt: "## Purpose of the Order Book
+excerpt: "The Order Book collects a group of requests which are waiting to be processed. It does this periodically every 5-10 seconds. It then calculates the best routes for each request by accessing the algorithm. 
 
-The Order Book’s role is to handle users' requests - to receive them from frontend, validate, and save them in the database. it consists of _3 steps_:
+After receiving a response from the algorithm, the Order Book also sorts requests for any possible **batch** transactions. The Order Book tries to batch requests, e.g., into the same tokens on the same chain. If possible batches are found, the Order Manager sends them to the Order Executer for processing."
 
-1.	receive user request
-2.	verify allowance
-3.	save in the database"
 ---
 
 ## Purpose of the Order Book
