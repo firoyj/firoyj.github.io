@@ -3,7 +3,7 @@ title: "Smart Contract Events"
 mathjax: true
 layout: post
 categories: github, website
-excerpt: "# Listening to smart contract events from a frontend DApp via Ethers.js
+excerpt: "Listening to smart contract events from a frontend DApp via Ethers.js
 
 This guide will walk you through the necessary steps to listen to smart contract events via ethers.js. These steps cover the installation and configuration of essential tools and technologies."
 ---
