@@ -3,12 +3,18 @@ title: "Order Book"
 mathjax: true
 layout: post
 categories: github, website
-excerpt: "This is a custom excerpt for your post."
+excerpt: "## Purpose of the Order Book
+
+The Order Book’s role is to handle users' requests - to receive them from frontend, validate, and save them in the database. it consists of _3 steps_:
+
+1.	receive user request
+2.	verify allowance
+3.	save in the database"
 ---
 
 ## Purpose of the Order Book
 
-The Order Book’s responsibility is to handle users' requests - to receive them from frontend, validate, and save them in the database. it consists of _3 steps_:
+The Order Book’s role is to handle users' requests - to receive them from frontend, validate, and save them in the database. it consists of _3 steps_:
 
 1.	receive user request
 2.	verify allowance
