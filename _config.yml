@@ -20,7 +20,12 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "/fiona_roy_cv_technical_writer.pdf", title: "CV"}
   - {file: "about.md"} #, icon: address-card}
   - {file: "contact.html"}
-  
+
+kramdown:
+  auto_ids          : true
+  entity_output     : as_char
+  toc_levels        : [1, 2, 3, 4, 5, 6]
+
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: "E-mail", icon: envelope, url: "mailto:firoyj@gmail.com"}
   - {title: "GitHub", icon: github, url: "https://github.com/firoyj"}
