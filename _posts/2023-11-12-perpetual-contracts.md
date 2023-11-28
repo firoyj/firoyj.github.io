@@ -4,6 +4,10 @@ title: "Perpetual Contracts"
 excerpt: "This is a custom excerpt for Perps post."
 ---
 
+{% if post.content.size > post.excerpt.size %}
+<p><a href="{{ post.url }}">(more...)</a></p>
+{% endif %}
+
 # Understanding Perpetual Contracts: A Technical Overview
 
 Perpetual contracts, pioneered by Bitmex within the cryptocurrency space, have become one of the most popular derivative products. They allow traders to speculate on the future price of an asset by going long (buying) or going short (selling) perpetual futures contracts. Unlike traditional futures contracts, perpetual contracts don't have an expiration date and remain effective until the trader closes their position.
