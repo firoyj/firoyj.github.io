@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Perpetual Contracts"
+excerpt: "This is a custom excerpt for Perps post."
 ---
 
 # Understanding Perpetual Contracts: A Technical Overview
