@@ -3,6 +3,7 @@ title: "Request Signing"
 mathjax: true
 layout: post
 categories: github, website
+excerpt: "This is a custom excerpt for your post."
 ---
 
 # Guide to Request Signing
