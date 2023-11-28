@@ -16,6 +16,10 @@ The Order Book’s responsibility is to handle users' requests - to receive them
 
 The Order Book collects a group of requests which are waiting to be processed. It does this periodically every 5-10 seconds. It then calculates the best routes for each request by accessing the algorithm. 
 
+{% if post.content.size > post.excerpt.size %}
+<p><a href="{{ post.url }}">(more...)</a></p>
+{% endif %}
+
 After receiving a response from the algorithm, the Order Book also sorts requests for any possible **batch** transactions. The Order Book tries to batch requests, e.g., into the same tokens on the same chain. If possible batches are found, the Order Manager sends them to the Order Executer for processing.
 
 
