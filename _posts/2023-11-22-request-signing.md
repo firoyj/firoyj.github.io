@@ -3,9 +3,7 @@ title: "Request Signing"
 mathjax: true
 layout: post
 categories: github, website
-excerpt: "HTTP request signing is the process of cryptographically signing requests sent to the Form3 API to increase security and ensure access to the API is restricted to entities that have access to a secret private key. Form3 supports request signing as its default authentication method for all supported HTTP method types, including `GET`, `POST`, `PATCH`, `DELETE` and `PUT`.
-
-The Form3 API uses request signing as defined by the Network Working Group in the [Signing HTTP Requests draft](https://datatracker.ietf.org/doc/html/draft-cavage-http-signatures-12) using the `RSA-SHA256` algorithm and [PKCS #1 v1.5 padding scheme](https://datatracker.ietf.org/doc/html/rfc8017) (if `PSS` padding is used, the API responds with a `401` "Unauthorized" error)."
+excerpt: "HTTP request signing is the process of cryptographically signing requests sent to the Form3 API to increase security and ensure access to the API is restricted to entities that have access to a secret private key. Form3 supports request signing as its default authentication method for all supported HTTP method types, including `GET`, `POST`, `PATCH`, `DELETE` and `PUT`."
 ---
 
 # Guide to Request Signing
