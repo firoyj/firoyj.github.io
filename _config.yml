@@ -23,7 +23,7 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
 
 defaults:
   - scope:
-      path: "assets/img/fiona_roy_cv_technical_writer"
+      path: ""
     values:
       image: true
 
