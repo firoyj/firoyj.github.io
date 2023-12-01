@@ -7,7 +7,7 @@ excerpt: "I was the first technical writer at Advanced Blockchain, an incubator 
 
 ## Context and problem
 
-I was the first technical writer at [Advanced Blockchain](https://www.advancedblockchain.com/), an incubator for blockchain projects. Upon joining, I soon realized there was a noticeable lack of technical documentation. In a dynamic, fast-paced setting developers were forging ahead with highly novel DeFi projects, but the gaps in documentation presented critical bottlenecks. This resulted in challenges for testing code, maintenance, and onboarding.
+As the first technical writer at [Advanced Blockchain](https://www.advancedblockchain.com/), an incubator for blockchain projects, upon joining I noticed  a significant lack of technical documentation. In a dynamic, fast-paced setting developers were forging ahead with highly novel DeFi projects, but the documentation gaps presented critical bottlenecks. This resulted in challenges for testing code, maintenance, and onboarding.
 <br><br>
 I assessed existing documentation, aligning it with the company goals to develop a scope and strategy for technical documentation. I joined the Infinix product team at the design/implementation stage.<br>
 The writing sample below is an excerpt of a high-level overview with elements of explanation. The purpose is to explain the product to the general reader who may want to interact with the DeFi product.
