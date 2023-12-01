@@ -3,12 +3,15 @@ title: About
 layout: page
 ---
 
+
+![Fiona_Roy_headshot](https://github.com/firoyj/firoyj.github.io/assets/101256554/f62387a3-bdc3-4fe9-9071-3a10905bbf46)
+
+
 Hello! Thanks for reviewing my portfolio. I'm Fiona Roy, an experienced linguist and technical author in the areas of Financial Services, SaaS, and Web3/ Blockchain. I love diving into new tech! 
 
 A native English speaker with extensive background in linguistics and technical communication.
 
 ## EXPERTISE:
-
 - Documentation aimed at software developers and business analysts
 - UI and website copy
 - Docs-as-code tools including GitHub version control
