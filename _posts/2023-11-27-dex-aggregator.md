@@ -1,29 +1,28 @@
 ---
 layout: post
 title: "DEX Aggregator"
-excerpt: "The Protocol delivers a sophisticated cross-ledger DEX aggregator, enabling optimal execution through market aggregation. By tapping into Automated Market Makers (AMMs) across multiple chains, it achieves a dark pool-like order execution. This way, users can seamlessly initiate a swap of any supported token, and the protocol finds the best route for that swap, whether it's a simple AMM swap or a more complex movement of tokens across different networks to achieve the most favorable outcome.
-
-The protocol excels in 3 fundamental features:
-"
+excerpt: "The Protocol delivers a sophisticated cross-ledger DEX aggregator, enabling optimal execution through market aggregation. By tapping into Automated Market Makers (AMMs) across multiple chains, it achieves a dark pool-like order execution. This way, users can seamlessly initiate a swap of any supported token, and the protocol finds the best route for that swap, whether it's a simple AMM swap or a more complex movement of tokens across different networks to achieve the most favorable outcome."
 ---
 
 ## Context and problem
+
 As the first technical writer at Advanced Blockchain, an incubator for blockchain projects, upon joining I noticed a significant lack of technical documentation. In a dynamic, fast-paced setting developers were forging ahead with highly novel DeFi projects, but the documentation gaps presented critical bottlenecks. This resulted in challenges for testing code, maintenance, and onboarding.
 
-I assessed existing documentation, aligning it with the company goals to develop a scope and strategy for technical documentation. I joined the Infinix product team at the design/implementation stage.
-The writing sample below is an excerpt of a high-level overview with elements of explanation. The purpose is to explain the product to the general reader who may want to interact with the DeFi product.
+I assessed existing documentation, aligning it with the company goals to develop a scope and strategy for technical documentation. I joined the Entropic product team at the design stage.
+The writing sample below is an excerpt of a high-level overview with elements of explanation. The purpose is to explain the product to the general reader.
 
 ## Contribution
-I worked closely with the Infinix product manager and engineers on the following:
 
-Planning scope and structure of the documentation, including gaps analysis
-Initiating Docs-as-code processes in GitHub
-Documentating processes and tutorials
-Collaborated with engineers on Software Development Plan (SDP)
-Curating and editing internal knowledge base
-Collaborating with key engineers to prepare documentation for an external audit
+I worked closely with the Entropic product manager and engineers on the following:
+
+- Planning scope and structure of the documentation, including gaps analysis
+- Initiating Docs-as-code processes in GitHub
+- Processes and tutorials
+- Collaborated with engineers on Software Development Plan (SDP)
+- Curating and editing internal knowledge base
 
 ## Impact
+
 
 
 # Exploring Cross-ledger DEX Aggregation with ENtropic Protocol and X  Token
@@ -36,7 +35,7 @@ The protocol excels in 3 fundamental features:
 
 ### 1. Coincidence of Wants
 
-Entropic introduces a cross-chain adaptation of Coincidence of Wants (CoW). It collects CoWs from various ledgers, matching orders off-chain. This cross-ledger smart matching engine organizes orders for potential matches and navigates through larger networks and tokens to reach the more exotic ones. Entropic's algorithm optimizes output for the user since CoW is often cheaper, faster, and more reliable.
+Entropic introduces a cross-chain adaptation of Coincidence of Wants (CoW). It collects CoWs from various ledgers and matches the orders off-chain. This smart matching engine sorts orders to find any potential matches, and then navigates through larger networks and tokens to access the more exotic ones. Entropic's algorithm optimizes output for the user since CoW is often cheaper, faster, and more reliable.
 
 ### 2. Cross-Chain Functionality
 
