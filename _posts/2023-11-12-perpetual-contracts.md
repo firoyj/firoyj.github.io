@@ -7,24 +7,20 @@ excerpt: "Perpetual contracts, pioneered by Bitmex within the cryptocurrency spa
 
 ## Context
 
-As the first technical writer at [Advanced Blockchain](https://www.advancedblockchain.com/), an incubator for decentralized blockchain projects, I carried out an analysis on the existing documentation, requirements and goals, as well as scope and strategy to achieve the goals. For I worked closely with the product team of software dev.  
-I introduced Docs-as-code processes to the company, as well as workflows
+I was the first technical writer at [Advanced Blockchain](https://www.advancedblockchain.com/), an incubator for decentralized blockchain projects. Initially, I assessed the status of existing documentation, against the background of the company's requirements requirements and goals, to arrive at a scope and strategy for technical documentation. I worked closely with the product manager for Infinix, as well as stakeholders in the engineering team.
 
 ## Problem
 
-Upon joining Advanced Blockchain, there was very little documentation. In a dynamic, fast-paced setting, developer teams were forging ahead, yet the absence of comprehensive documentation emerged as a critical bottleneck. This resulted in challenges for testing, maintenance, onboarding, and the transmission of knowledge.
+Upon joining Advanced Blockchain, there was a noticeable lack of technical documentation. In a dynamic, fast-paced setting developers were forging ahead with highly novel DeFi projects, but the gaps in documentation presented critical bottlenecks. This resulted in challenges for testing code, maintenance, and onboarding.
 
-## Contribution
+## Contribution 
 
-Working closely with the prodect manager, I documentation tasks including: 
-
-- Planning documentation scope and structure
-- Process documentation
-- Internal knowledge base
-- Step-by-step tutorials
-- Software Development Plan (SDP)
-- Supported engineers in starting documentation for an external audit
+- Planned the scope and structure of documentation, including gaps analysis
 - Initiated Docs-as-code processes in GitHub
+- Documentated processes and tutorials
+- Curated and edited internal knowledge base
+- Software Development Plan (SDP)
+- Worked in partnerwhip with key engineers to prepare documentation for an external audit
 
 ## Impact
 
