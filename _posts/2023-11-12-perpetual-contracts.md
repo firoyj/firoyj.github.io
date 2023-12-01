@@ -25,11 +25,12 @@ The writing sample below is an excerpt of a high-level overview with elements of
 
 ## Impact
 
-- Clear documentation streamlined collaboration, improving efficiency and facilitating a more effective testing process. 
+- Clear documentation streamlined collaboration, improving efficiency and facilitating a more thorough testing process. 
 - Maintenance procedures were enhanced, enabling easier codebase updates and issue resolution. 
 - The onboarding process for new team members became more efficient, 
 - The adoption of Docs-as-code practices in GitHub revolutionized the documentation workflow, enhancing collaboration and transparency.
-- The SDP alignment ensured a cohesive team approach, and the knowledge base became easier to use and highly valued.
+- Collaboration on the SDP ensured alignment between management and project goals and development approach.
+- The knowledge base became easier to use and highly valued.
 
 In essence, the impacts of my work extended across collaboration, testing, maintenance, onboarding, and adherence to high standards, significantly optimizing the overall development process.
 
