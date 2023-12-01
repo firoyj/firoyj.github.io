@@ -2,7 +2,7 @@
 layout: post
 title: "Perpetual Contracts"
 toc: true
-excerpt: "I was the first technical writer at Advanced Blockchain, an incubator for blockchain projects. Upon joining, I soon realized there was a noticeable lack of technical documentation. In a dynamic, fast-paced setting developers were forging ahead with highly novel DeFi projects, but the gaps in documentation presented critical bottlenecks. This resulted in challenges for testing code, maintenance, and onboarding. I assessed existing documentation, aligning it with the company goals to develop a scope and strategy for technical documentation. I joined the Infinix product team at the design/implementation stage. This sample is an excerpt of a high-level overview with elements of explanation."
+excerpt: "I was the first technical writer at Advanced Blockchain, an incubator for blockchain projects. Upon joining, I soon realized there was a noticeable lack of technical documentation. In a dynamic, fast-paced setting developers were forging ahead with highly novel DeFi projects, but the gaps in documentation presented critical bottlenecks. This resulted in challenges for testing code, maintenance, and onboarding.<br>I assessed existing documentation, aligning it with the company goals to develop a scope and strategy for technical documentation. I joined the Infinix product team at the design/implementation stage. This sample is an excerpt of a high-level overview with elements of explanation."
 ---
 
 ## Context and problem
@@ -16,16 +16,22 @@ The writing sample below is an excerpt of a high-level overview with elements of
 
  I worked closely with the Infinix product manager and engineers on the following:
  
-- Planned the scope and structure of the documentation, including gaps analysis
-- Initiated Docs-as-code processes in GitHub
-- Documentated processes and tutorials
-- Software Development Plan (SDP)
-- Curated and edited internal knowledge base
-- Collaborated with key engineers to prepare documentation for an external audit
+- Planning scope and structure of the documentation, including gaps analysis
+- Initiating Docs-as-code processes in GitHub
+- Documentating processes and tutorials
+- Collaborated with engineers on Software Development Plan (SDP)
+- Curating and editing internal knowledge base
+- Collaborating with key engineers to prepare documentation for an external audit
 
 ## Impact
 
-Engineering team benefited from having clear and easily accessible documentation to 
+- Clear documentation streamlined collaboration, improving efficiency and facilitating a more effective testing process. 
+- Maintenance procedures were enhanced, enabling easier codebase updates and issue resolution. 
+- The onboarding process for new team members became more efficient, 
+- The adoption of Docs-as-code practices in GitHub revolutionized the documentation workflow, enhancing collaboration and transparency.
+- The SDP alignment ensured a cohesive team approach, and the knowledge base became easier to use and highly valued.
+
+In essence, the impacts of my work extended across collaboration, testing, maintenance, onboarding, and adherence to high standards, significantly optimizing the overall development process.
 
 # Understanding Perpetual Contracts: A Technical Overview
 
