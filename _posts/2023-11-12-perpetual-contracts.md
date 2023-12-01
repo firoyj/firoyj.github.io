@@ -5,22 +5,23 @@ toc: true
 excerpt: "Perpetual contracts, pioneered by Bitmex within the cryptocurrency space, have become one of the most popular derivative products. They allow traders to speculate on the future price of an asset by going long (buying) or going short (selling) perpetual futures contracts. Unlike traditional futures contracts, perpetual contracts don't have an expiration date and remain effective until the trader closes their position."
 ---
 
-## Context
+## Context and problem
 
-I was the first technical writer at [Advanced Blockchain](https://www.advancedblockchain.com/), an incubator for decentralized blockchain projects. Initially, I assessed the status of existing documentation, against the background of the company's requirements requirements and goals, to arrive at a scope and strategy for technical documentation. I worked closely with the product manager for Infinix, as well as stakeholders in the engineering team.
-
-## Problem
-
-Upon joining Advanced Blockchain, there was a noticeable lack of technical documentation. In a dynamic, fast-paced setting developers were forging ahead with highly novel DeFi projects, but the gaps in documentation presented critical bottlenecks. This resulted in challenges for testing code, maintenance, and onboarding.
+I was the first technical writer at [Advanced Blockchain](https://www.advancedblockchain.com/), an incubator for blockchain projects. Upon joining, I soon realized there was a noticeable lack of technical documentation. In a dynamic, fast-paced setting developers were forging ahead with highly novel DeFi projects, but the gaps in documentation presented critical bottlenecks. This resulted in challenges for testing code, maintenance, and onboarding.
+<br><br>
+I started by assessing existing documentation within the framework of the company's requirements and goals, using this to develop a scope and strategy for the technical documentation within the projects I was asigned to. I joined the Infinix product team at the Design/Implementation stage.<br>
+This writing sample below is an example of the high-level overview with elements of explanation. The end-user of this text is the general reader who wants to interact with the DeFi product 
 
 ## Contribution 
 
-- Planned the scope and structure of documentation, including gaps analysis
+ I worked closely with the Infinix product manager and engineers on the following:
+ 
+- Planned the scope and structure of the documentation, including gaps analysis
 - Initiated Docs-as-code processes in GitHub
 - Documentated processes and tutorials
-- Curated and edited internal knowledge base
 - Software Development Plan (SDP)
-- Worked in partnerwhip with key engineers to prepare documentation for an external audit
+- Curated and edited internal knowledge base
+- Collaborated with key engineers to prepare documentation for an external audit
 
 ## Impact
 
