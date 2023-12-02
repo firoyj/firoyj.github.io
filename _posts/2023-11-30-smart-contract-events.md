@@ -8,7 +8,7 @@ excerpt: "Listening to smart contract events from a frontend DApp via Ethers.js
 This guide will walk you through the necessary steps to listen to smart contract events via ethers.js. These steps cover the installation and configuration of essential tools and technologies."
 ---
 
-### Context and problem
+#### Context and problem
 
 I created this draft tutorial as an exercise to deepen my understanding of smart contracts and to test new tools as part of my documentation process. The information is based on code taken from the open-source [Demo Code Snippets repository](https://github.com/rsksmart/demo-code-snippets) for [Rootstock](https://rootstock.io/), an EVM-compatible smart contracts platform. 
 
@@ -16,15 +16,15 @@ The aim of this tutorial is to help developers set up and use tools on Rootstock
 
 > As I was working on a PC instead of a Mac like usual, I ran [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl) for bash commands.
 
-### Contribution
+#### Contribution
 
 In this particular instance, there was no collaboration as it was a theoretical exercise based on publicly-available code in the repository.
 
-### Impact
+#### Impact
 
 If the tutorial were applied in a real-world scenario, I believe it would help engineers understand how to approach using ethers.js, clear up any doubts, and hopefully entice potential customers to confidently interact with Rootstock.
 
-## Listening to smart contract events from a frontend DApp via Ethers.js
+# Listening to smart contract events from a frontend DApp via Ethers.js
 
 This guide will walk you through the necessary steps to listen to smart contract events via ethers.js. These steps cover the installation and configuration of essential tools and technologies.
 
