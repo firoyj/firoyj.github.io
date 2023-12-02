@@ -14,7 +14,9 @@ I created this draft tutorial as an exercise to deepen my understanding of smart
 
 The aim of this tutorial is to help developers set up and use tools on Rootstock. The document assumes that the audience is a developer with some foundational knowledge of Solidity and Hardhat.
 
-> As I was working on a PC instead of a Mac like usual, I ran [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl) for bash commands.
+> Notes:
+> - As I was working on a PC instead of a Mac like I normally use, I installed [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl) for bash commands.
+> - I opted not to provide detailed instructions for `Step 2: Setting up RSK Local Node` as these are comprehensively explained in the page it links to. In a realistic documentation package, it would naturally link out rather than repeat the information.  
 
 #### Contribution
 
