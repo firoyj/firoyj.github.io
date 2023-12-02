@@ -1,11 +1,10 @@
 ---
-title: ""
+title: "About"
 layout: page
 ---
 
 <img src="/assets/img/fiona.jpg" width="18%" height="200"/>
 
-# WELCOME AND BIO
 
 Hello! Thank you for taking the time to review my portfolio. I'm Fiona Roy, an experienced linguist and technical author in the areas of Financial Services, SaaS, and Blockchain technologies. I thrive on exploring new tech frontiers!
 
@@ -17,7 +16,7 @@ Recognizing the transformative power of software and automation in reshaping ind
 
 I now live in Portugal, and in my spare time I enjoy nature, museums and street cafes. I also spend far too much of my spare time playing around with html and researching blockchain projects.
 
-## EXPERTISE:
+### Expertise
 
 - Technical documentation for software engineers and business analysts
 - Client-facing and website copy
@@ -31,7 +30,7 @@ I now live in Portugal, and in my spare time I enjoy nature, museums and street 
 - Best practices evangelist: I provide training and support material to support teams in writing their own excellent documentation
 - Always seeking opportunities to automate processes and save company time
 
-## TOOLS AND TECHNOLOGIES:
+### Tools and technologies
 
 - JSON, YAML, Markdown, Postman, REST API, GitHub, CSS, HTML, Docker, DITA, WordPress, Docusaurus, Document360, Confluence, Jira, ClickUp, Sigma and command line
 - Smart Contract tools: experience node.js, Truffle, hardHat
@@ -39,7 +38,7 @@ I now live in Portugal, and in my spare time I enjoy nature, museums and street 
 - Lnguages: some familiarity and ability to read Python, JavaScript, Golang and Solidity
 - Graphic design: experienced using Canva, AutoCAD, Autodesk, Illustrator, InDesign, Photoshop, etc.
 
-## SOFT SKILLS
+### Soft skills
 
 - People-centered and obsessed with the end-user
 - Collaborative and communicative with contagious enthusiasm for ideas
