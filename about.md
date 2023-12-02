@@ -3,7 +3,7 @@ title: About
 layout: page
 ---
 
-<img src="/assets/img/fiona.jpg" width="20%" height="100"/>
+<img src="/assets/img/fiona.jpg" width="18%" height="200"/>
 
 # WELCOME AND BIO
 
