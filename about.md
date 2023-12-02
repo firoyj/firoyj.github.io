@@ -3,6 +3,7 @@ title: About
 layout: page
 ---
 
+![fiona](https://github.com/firoyj/firoyj.github.io/assets/101256554/8270b53d-1b96-4b6c-abc8-81318cb636b3 =200x)
 
 
 # WELCOME AND BIO
