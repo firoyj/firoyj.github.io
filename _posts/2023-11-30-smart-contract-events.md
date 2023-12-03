@@ -3,7 +3,7 @@ title: "Smart Contract Events"
 mathjax: true
 layout: post
 categories: github, website
-excerpt: "This guide walks you through the steps required to listen to smart contract events via ethers.js, covering the installation and configuration of essential tools and technologies."
+excerpt: "`ethers.js` is a compact JavaScript library that enables developers to interact with the Ethereum blockchain. It serves as a toolkit for developers to build decentralized applications on EVM-compatible blockchain networks.<br><br>This guide walks you through the necessary steps to listen to smart contract events via ethers.js, covering the installation and configuration of the tools and technologies required."
 ---
 
 #### Context and problem
@@ -26,9 +26,9 @@ If the tutorial were applied in a real-world scenario, I believe it would help e
 
 # Listening to smart contract events from a frontend DApp via Ethers.js
 
-This guide walks you through the steps required to listen to smart contract events via ethers.js, covering the installation and configuration of essential tools and technologies.
-
 `ethers.js` is a compact JavaScript library that enables developers to interact with the Ethereum blockchain. It serves as a toolkit for developers to build decentralized applications on EVM-compatible blockchain networks.
+
+This guide walks you through the necessary steps to listen to smart contract events via ethers.js, covering the installation and configuration of the tools and technologies required.
 
 ### Prerequisites
 
