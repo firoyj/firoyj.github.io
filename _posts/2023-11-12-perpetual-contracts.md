@@ -2,7 +2,7 @@
 layout: post
 title: "Overview: Perpetual Contracts"
 toc: true
-excerpt: "I was the first technical writer at Advanced Blockchain, an incubator for blockchain projects. Upon joining, I soon realized there was a noticeable lack of technical documentation. In a dynamic, fast-paced setting developers were forging ahead with highly novel DeFi projects, but the gaps in documentation presented critical bottlenecks. This resulted in challenges for testing code, maintenance, and onboarding.<br>I assessed existing documentation, aligning it with the company goals to develop a scope and strategy for technical documentation. I joined the Infinix product team at the design/implementation stage. This sample is an excerpt of a high-level overview with elements of explanation."
+excerpt: "Perpetual contracts, pioneered by Bitmex within the cryptocurrency space, have become one of the most popular derivative products. They allow traders to speculate on the future price of an asset by going long (buying) or going short (selling) perpetual futures contracts. Unlike traditional futures contracts, perpetual contracts don't have an expiration date and remain effective until the trader closes their position.<br><br>Perpetual contracts allow traders to speculate on the future price of a given asset by buying (going long) or selling (going short). Unlike typical futures contracts, perpetuals do not expire and instead remain effective until the trader closes their position."
 ---
 
 ## Context and problem
