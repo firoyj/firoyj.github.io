@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Perpetual Contracts"
+title: "Overview: Perpetual Contracts"
 toc: true
 excerpt: "I was the first technical writer at Advanced Blockchain, an incubator for blockchain projects. Upon joining, I soon realized there was a noticeable lack of technical documentation. In a dynamic, fast-paced setting developers were forging ahead with highly novel DeFi projects, but the gaps in documentation presented critical bottlenecks. This resulted in challenges for testing code, maintenance, and onboarding.<br>I assessed existing documentation, aligning it with the company goals to develop a scope and strategy for technical documentation. I joined the Infinix product team at the design/implementation stage. This sample is an excerpt of a high-level overview with elements of explanation."
 ---
