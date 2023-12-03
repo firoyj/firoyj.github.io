@@ -1,5 +1,5 @@
 ---
-title: "Smart Contract Events"
+title: "Listening to Smart Contract Events with ethers.js"
 mathjax: true
 layout: post
 categories: github, website
