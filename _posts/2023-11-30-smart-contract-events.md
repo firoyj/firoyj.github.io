@@ -26,7 +26,9 @@ If the tutorial were applied in a real-world scenario, I believe it would help e
 
 # Listening to smart contract events from a frontend DApp via Ethers.js
 
-This guide will walk you through the necessary steps to listen to smart contract events via ethers.js. These steps cover the installation and configuration of essential tools and technologies.
+This guide walks you through the steps required to listen to smart contract events via ethers.js, covering the installation and configuration of essential tools and technologies.
+
+`ethers.js` is a compact JavaScript library that enables developers to interact with the Ethereum blockchain. It serves as a toolkit for developers to build decentralized applications on EVM-compatible blockchain networks.
 
 ### Prerequisites
 
@@ -36,10 +38,6 @@ Before proceeding, ensure you have the following prerequisites:
 - Git
 - Basic understanding of smart contracts
 - Knowledge of [Full Stack dApp Guide on Rootstock](https://dev.rootstock.io/guides/full-stack-dapp-on-rsk/part1-overview/)
-
-{% if post.content.size > post.excerpt.size %}
-<p><a href="{{ post.url }}">(more...)</a></p>
-{% endif %}
 
 ### Step 1: Installing Node.js
 
