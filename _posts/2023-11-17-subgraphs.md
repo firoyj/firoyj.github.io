@@ -1,5 +1,5 @@
 ---
-title:  "Subgraphs"
+title:  "Tutorial: Subgraphs"
 mathjax: true
 layout: post
 categories: github, website
