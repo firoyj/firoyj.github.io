@@ -3,19 +3,17 @@ title: "Smart Contract Events"
 mathjax: true
 layout: post
 categories: github, website
-excerpt: "Listening to smart contract events from a frontend DApp via Ethers.js
-
-This guide will walk you through the necessary steps to listen to smart contract events via ethers.js. These steps cover the installation and configuration of essential tools and technologies."
+excerpt: "This guide walks you through the steps required to listen to smart contract events via ethers.js, covering the installation and configuration of essential tools and technologies."
 ---
 
 #### Context and problem
 
-I created this draft tutorial as an exercise to deepen my understanding of smart contracts and to test new tools as part of my documentation process. The information is based on code taken from the open-source [Demo Code Snippets repository](https://github.com/rsksmart/demo-code-snippets) for [Rootstock](https://rootstock.io/), an EVM-compatible smart contracts platform. 
+I created this draft tutorial as an exercise to deepen my understanding of smart contracts and to test new tools as part of my documentation process. Information here is based on code in the open-source [Demo Code Snippets repository](https://github.com/rsksmart/demo-code-snippets) for [Rootstock](https://rootstock.io/), an EVM-compatible smart contracts platform. 
 
-The aim of this tutorial is to help developers set up and use tools on Rootstock. The document assumes that the audience is a developer with some foundational knowledge of Solidity and Hardhat.
+The document assumes the reader is a developer with some foundational knowledge of Solidity and Hardhat, and it aims to help the reader set up and use tools on Rootstock.  
 
 > Notes:
-> - As I was working on a PC instead of a Mac like I normally use, I installed [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl) for bash commands.
+> - As I was working on a PC, I installed [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl) to run a Linux environment and use bash commands.
 > - I opted not to provide detailed instructions for `Step 2: Setting up RSK Local Node` as these are comprehensively explained in the page it links to. In a realistic documentation package, it would naturally link out rather than repeat the information.  
 
 #### Contribution
