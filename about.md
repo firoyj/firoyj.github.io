@@ -6,17 +6,17 @@ layout: page
 <img src="/assets/img/fiona.jpg" width="18%" height="200"/>
 
 
-Hello, thank you for taking the time to review my portfolio!
+Hello! Thank you for taking the time to review my portfolio.
 <br><br>
 I'm Fiona Roy, an accomnplished technical writer with expertise in blockchain technologies, financial services and software-as-a-service. I thrive on exploring new tech!
 
-A native English technical communicator, I started my career as an architect and urban designer following post-graduate studies in the UK. Upon relocating to South America, I contributed to large-scale infrastructure projects, such as hydroelectric, petroleum, mining and industrial engineering.
+A native English technical communicator, I started my career as an architect and urban designer following post-graduate studies in the UK. Upon relocating to South America, I contributed to large-scale infrastructure projects, including hydroelectric, petroleum, mining and industrial engineering.
 
 Simultanously, I freelanced as a translator and editor converting legal texts, regulatory directives and financial documents from Portuguese and Spanish into English.
 
-Recognizing the transformative power of software and automation in reshaping industries, I shifted my focuss to the software space. Every day I relish working with cutting-edge technology, embracing the challenge of simplifying complex concepts into clear, accessible language.
+Recognizing that software and automation is eating the world, I shifted my focuss to the software space. I want to be a part of it. Now, every day I relish working with cutting-edge technology, embracing the challenge of breaking down complex concepts into clear, accessible language.
 
-Now residing in Portugal, I spend my spare time hiking, exploring museums and relaxing in street cafes. Additionally, I spend a significant portion of my free time experimenting with HTML and researching blockchain projects.
+Currently residing in Portugal, I spend my spare time hiking, exploring museums and relaxing in street cafes. Additionally, I spend a lot of my free time experimenting with HTML and researching blockchain projects.
 
 ### Expertise
 
