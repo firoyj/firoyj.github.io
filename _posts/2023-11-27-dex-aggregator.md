@@ -6,28 +6,28 @@ excerpt: "Entropic protocol delivers a sophisticated cross-ledger DEX aggregator
 
 ## Context and problem
 
-As the first technical writer at [Advanced Blockchain](https://www.advancedblockchain.com/), an incubator for blockchain projects, I arrived to a notable lack of technical documentation. In a dynamic, fast-paced environment developer teams were steaming ahead creating novel DeFi projects. However, the gaps in documentation resulted in critical bottlenecks and challenges for onboarding, code testing, maintenance.
+As the first technical writer at [Advanced Blockchain](https://www.advancedblockchain.com/), an incubator for blockchain projects, I arrived to a notable lack of technical documentation. In a dynamic, fast-paced environment developer teams were steaming ahead creating novel DeFi projects. However, the gaps in documentation resulted in critical bottlenecks and challenges for onboarding, code testing, maintenance and, importantly, shipping the products.
+
+A large part of the documentation I created at Advanced Blockchain is protected by non-disclosure agreements, therefore I'm unable to share it here. The writing sample below is an excerpt of a high-level overview, the intended audience being the general public. 
 
 ## Contribution
 
-A large part of the documentation I created at Advanced Blockchain is protected by non-disclosure agreements, therefore I cannot share it her, but the writing sample below is an excerpt of a high-level overview with elements of explanation. The purpose is to explain the protocol to the general reader. 
+In my role, I started by evaluating the existing status of the documentation. I then developed a scope and strategy in alignment with the company's goals. I joined the Entropic product team at the design stage.
 
-I started by assessing the status of the existing documentation, I then developed a scope and strategy to help the company achieve its goals. I joined the Entropic product team at the design stage.
-
-I worked closely with the Entropic product manager and engineers on the following:
+In terms of my contribution, I worked closely with the Entropic product manager and engineers on the following:
 
 - Collaborated with engineers to prepare project documentation for external audit
-- Planning scope and structure of the documentation, including gaps analysis
-- Initiating Docs-as-code processes in GitHub
-- Processes and tutorials
+- Planned for scope and strategy of the documentation, including gaps analysis
+- Initiated a Docs-as-code process in GitHub
+- Created documentation for processes and tutorials
 - Collaborated with engineers on Software Development Plan (SDP)
-- Curating and editing internal knowledge base
+- Curated and edited internal knowledge base
 
 ## Impact
 
-- Helping to prepare documentation for audit presented the technical details in a simplified format and language, enabling the auditors to better make their assessments.
-- Clear documentation streamlined collaboration and improved efficiency within the team, as well as helping
-- New joiners were better able to onboard quicker with more confidence.
+- The simplified format and language of the technical details enabled the auditors to better carry out their assessments
+- My clear documentation helped streamline collaboration and improved efficiency within the team
+- New joiners were able to onboard quicker and with more confidence.
 - My work to deploy and demonstrate Docs-as-code practices in GitHub revolutionized the documentation workflow for the whole team, enhancing collaboration and transparency.
 -  
 
