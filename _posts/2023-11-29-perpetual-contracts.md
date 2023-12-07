@@ -15,16 +15,17 @@ The writing sample below is an excerpt of a high-level overview with elements of
 ## Contribution 
 
  I worked closely with the Infinix product manager and engineers on the following:
- 
-- Planning scope and structure of the documentation, including gaps analysis
-- Initiating Docs-as-code processes in GitHub
-- Documentating processes and tutorials
+
+- Planned scope and structure of the documentation, including gaps analysis
+- Initiated Docs-as-code processes in GitHub
+- Collaborated with key engineers to prepare documentation for an external audit
+- Documentated processes and tutorials
 - Collaborated with engineers on Software Development Plan (SDP)
-- Curating and editing internal knowledge base
-- Collaborating with key engineers to prepare documentation for an external audit
+- Curated and edited internal knowledge base
 
 ## Impact
 
+- My work to simplify the format and language of the technical details enabled the auditors to better carry out their assessments
 - Clear documentation streamlined collaboration, improving efficiency and facilitating a more thorough testing process. 
 - Maintenance procedures were enhanced, enabling easier codebase updates and issue resolution. 
 - The onboarding process for new team members became more efficient, 
