@@ -6,17 +6,16 @@ excerpt: "Entropic protocol delivers a sophisticated cross-ledger DEX aggregator
 
 ## Context and problem
 
-As the first technical writer at [Advanced Blockchain](https://www.advancedblockchain.com/), an incubator for blockchain projects, I arrived to a notable lack of technical documentation. In a dynamic, fast-paced environment developer teams were steaming ahead creating novel DeFi projects. However, the gaps in documentation resulted in critical bottlenecks and challenges for onboarding, code testing, maintenance and, importantly, shipping the products.
+As the first technical writer at [Advanced Blockchain](https://www.advancedblockchain.com/), an incubator for blockchain projects, I arrived to a notable lack of technical documentation. In a dynamic, fast-paced environment developer teams were forging ahead creating novel DeFi projects. However, the gaps in documentation resulted in critical bottlenecks and challenges for onboarding, code testing, maintenance, and importantly, shipping the products.
 
-A large part of the documentation I created at Advanced Blockchain is protected by non-disclosure agreements, therefore I'm unable to share it here. The writing sample below is an excerpt of a high-level overview, the intended audience being the general public. 
+As most of the documentation I created at Advanced Blockchain is protected by non-disclosure agreements, I'm unable to share it here. The writing sample below is an excerpt of a high-level overview, the intended audience being the general public. 
 
 ## Contribution
 
-In my role, I started by evaluating the existing status of the documentation. I then developed a scope and strategy in alignment with the company's goals. I joined the Entropic product team at the design stage.
+In my role, I started by evaluating the existing status of the documentation. I then developed a scope and strategy in alignment with the company's goals. I joined the Entropic product team at the design stage with much of the product still to be detailed.
 
 In terms of my contribution, I worked closely with the Entropic product manager and engineers on the following:
 
-- Collaborated with engineers to prepare project documentation for external audit
 - Planned for scope and strategy of the documentation, including gaps analysis
 - Initiated a Docs-as-code process in GitHub
 - Created documentation for processes and tutorials
@@ -29,7 +28,6 @@ In terms of my contribution, I worked closely with the Entropic product manager 
 - My clear documentation helped streamline collaboration and improved efficiency within the team
 - New joiners were able to onboard quicker and with more confidence.
 - My work to deploy and demonstrate Docs-as-code practices in GitHub revolutionized the documentation workflow for the whole team, enhancing collaboration and transparency.
--  
 
 # Exploring Cross-ledger DEX Aggregation with Entropic Protocol and X  Token
 
