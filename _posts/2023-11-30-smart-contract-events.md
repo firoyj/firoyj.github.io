@@ -3,10 +3,10 @@ title: "Tutorial: Listening to Smart Contract Events with ethers.js"
 mathjax: true
 layout: post
 categories: github, website
-excerpt: "`ethers.js` is a compact JavaScript library that enables developers to interact with the Ethereum blockchain. It serves as a toolkit for developers to build decentralized applications on EVM-compatible blockchain networks.<br><br>This guide walks you through the necessary steps to listen to smart contract events via ethers.js, covering the installation and configuration of the tools and technologies required."
+excerpt: "Ethers.js is a compact JavaScript library that enables developers to interact with the Ethereum blockchain. It serves as a toolkit for building decentralized applications on EVM-compatible blockchain networks.<br><br>This guide walks you through the steps to listen to smart contract events via ethers.js, covering the installation and configuration of the tools and technologies required."
 ---
 
-#### - Context and problem
+#### * Context and problem
 
 I created this draft tutorial as an exercise to deepen my understanding of smart contracts and to test new tools as part of my documentation process. Information presented here is based on the open-source [Demo Code Snippets repository](https://github.com/rsksmart/demo-code-snippets) for [Rootstock](https://rootstock.io/), an EVM-compatible smart contracts platform. 
 
@@ -14,34 +14,36 @@ The document assumes the reader is a developer with some foundational knowledge 
 
 > Notes:
 > - As I was working on a PC, I installed [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl) to run a Linux environment and use bash commands.
-> - I opted not to provide detailed instructions for `Step 2: Setting up RSK Local Node` as these are comprehensively explained in the page it links to. In a realistic documentation package, it would naturally link out rather than repeat the information.  
+> - I opted not to provide detailed instructions for `Step 2: Setting up RSK Local Node` below, as these are comprehensively explained in the page it links to. In a realistic documentation package, it would naturally link out rather than repeat the information.  
 
-#### - Contribution
+#### * Contribution
 
-In this particular instance I did not actually contribute to the project or collaborate, as it was a theoretical exercise for the purposes of my own practice.
+In this particular instance I did not actually contribute to the project or collaborate. It was a theoretical exercise for the purposes of my own practice.
 
-#### - Impact
+#### * Impact
 
 Theoretically, if the tutorial were applied in a real-world scenario, I believe it would help engineers understand how to use ethers.js in the context of Rootstock. Hopefully, this tutorial would serve to entice potential customers to interact with the Rootstock blockchain.
 
 # Listening to smart contract events from a frontend DApp via Ethers.js
 
-`ethers.js` is a compact JavaScript library that enables developers to interact with the Ethereum blockchain. It serves as a toolkit for developers to build decentralized applications on EVM-compatible blockchain networks.
+#### Introduction
 
-This guide walks you through the necessary steps to listen to smart contract events via ethers.js, covering the installation and configuration of the tools and technologies required.
+[Ethers.js](https://docs.ethers.org/v5/) is a compact JavaScript library that you can use to interact with the Ethereum blockchain. It serves as a toolkit for building decentralized applications on [EVM](https://ethereum.org/en/developers/docs/evm/)-compatible blockchain networks.
+
+In this guide, we walk you through the necessary steps to listen to smart contract events via ethers.js, covering the installation and configuration of the tools and technologies required.
 
 ### Prerequisites
 
 Before proceeding, ensure you have the following prerequisites:
 
 - Familiarity with command-line usage
-- Git
+- GitHub
 - Basic understanding of smart contracts
 - Knowledge of [Full Stack dApp Guide on Rootstock](https://dev.rootstock.io/guides/full-stack-dapp-on-rsk/part1-overview/)
 
 ### Step 1: Installing Node.js
 
-Node.js is a vital component for development, especially with tools like Hardhat. Install Node.js version 12 or later:
+Node.js is a vital component for development, especially with tools such as Hardhat. Ensure you install Version 12 or later of node.js using the following:
 
 - #### Linux
 
@@ -66,7 +68,7 @@ Node.js is a vital component for development, especially with tools like Hardhat
 
     Install [Git for Windows](https://git-scm.com/download/win) and [Node.js installer for Windows](https://nodejs.org/dist/latest-v12.x/).
 
-    > **Note:** For Windows, consider using [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl) for a better development experience.
+    > **Note:** For Windows, consider using [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl) so that your development environment is consistent with the production environment.
 
 ### Step 2: Setting up RSK Local Node
 
@@ -85,7 +87,7 @@ npm install
 
 ### Step 4: Installing ethers.js
 
-Install ethers.js, a powerful library for Ethereum interactions:
+Now you're ready to install ethers.js:
 
 ```shell
 npm install --save ethers
@@ -105,11 +107,11 @@ mnemonics > .testnet.seed-phrase
 
 Create a `.secret` file in the project folder and store your mnemonic phrase securely.
 
-> If you need assistance generating a mnemonic phrase, use this [resource](https://iancoleman.io/bip39/).
+> If you need assistance to generate a mnemonic phrase, use this [resource](https://iancoleman.io/bip39/).
 
 ### Step 6: Getting The ABIs
 
-The ABI file(s) must match your contract(s). There are a few ways to obtain ABI files:
+The ABI file(s) must match your contract(s). Select one of the options below to obtain ABI files:
 
 - If you are building your own project, you will likely have access to your most current ABIs.
 - If you are building for a public project, download that project to your local machine and get the ABI by using [truffle compile](https://truffleframework.com/docs/truffle/overview).
@@ -146,4 +148,5 @@ cd frontend
 ### Final Considerations
 
 With these steps, you've set up your development environment for RSK workshops. Utilize tools like ethers.js to listen to smart contract events from your frontend DApp and enhance your development experience.
+
 
