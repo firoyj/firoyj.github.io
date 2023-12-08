@@ -14,9 +14,9 @@ A native English technical communicator, I started my career as an architect and
 
 Simultanously, I freelanced as a translator and editor converting legal texts, regulatory directives and financial documents from Portuguese and Spanish into English.
 
-Recognizing that software and automation is eating the world, I shifted my focuss to the software space. I want to be a part of it. Now, every day I relish working with cutting-edge technology, embracing the challenge of breaking down complex concepts into clear, accessible language.
+Recognizing that software is transforming industries, I shifted my focuss to the software space. I want to be a part of it. Now, every day I relish the challenge of translating cutting-edge technology into clear, accessible language.
 
-Currently residing in Portugal, I spend my spare time hiking, exploring museums and relaxing in street cafes. Additionally, I spend a lot of my free time experimenting with HTML and researching blockchain projects.
+Currently residing in Portugal, I spend my spare time hiking, exploring museums and relaxing in street cafes. Additionally, I devote a lot of my free time to experimenting with HTML and researching blockchain projects.
 
 ### Expertise
 
