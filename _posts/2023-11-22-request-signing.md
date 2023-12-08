@@ -1,12 +1,12 @@
 ---
-title: "[Draft] Guide: Request Signing"
+title: "[Draft] Guide: Request signing"
 mathjax: true
 layout: post
 categories: github, website
 excerpt: "HTTP request signing is the process of cryptographically signing requests sent to the Form3 API to increase security and ensure access to the API is restricted to entities that have access to a secret private key. Form3 supports request signing as its default authentication method for all supported HTTP method types, including `GET`, `POST`, `PATCH`, `DELETE` and `PUT`."
 ---
 
-# Guide to Request Signing
+# Guide to request signing
 
 HTTP request signing is the process of cryptographically signing requests sent to the Form3 API to increase security and ensure access to the API is restricted to entities that have access to a secret private key. Form3 supports request signing as its default authentication method for all supported HTTP method types, including `GET`, `POST`, `PATCH`, `DELETE` and `PUT`.
 
