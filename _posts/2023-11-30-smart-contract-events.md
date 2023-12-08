@@ -6,9 +6,9 @@ categories: github, website
 excerpt: "`ethers.js` is a compact JavaScript library that enables developers to interact with the Ethereum blockchain. It serves as a toolkit for developers to build decentralized applications on EVM-compatible blockchain networks.<br><br>This guide walks you through the necessary steps to listen to smart contract events via ethers.js, covering the installation and configuration of the tools and technologies required."
 ---
 
-#### Context and problem
+#### - Context and problem
 
-I created this draft tutorial as an exercise to deepen my understanding of smart contracts and to test new tools as part of my documentation process. Information here is based on code in the open-source [Demo Code Snippets repository](https://github.com/rsksmart/demo-code-snippets) for [Rootstock](https://rootstock.io/), an EVM-compatible smart contracts platform. 
+I created this draft tutorial as an exercise to deepen my understanding of smart contracts and to test new tools as part of my documentation process. Information presented here is based on the open-source [Demo Code Snippets repository](https://github.com/rsksmart/demo-code-snippets) for [Rootstock](https://rootstock.io/), an EVM-compatible smart contracts platform. 
 
 The document assumes the reader is a developer with some foundational knowledge of Solidity and Hardhat, and it aims to help the reader set up and use tools on Rootstock.  
 
@@ -16,13 +16,13 @@ The document assumes the reader is a developer with some foundational knowledge 
 > - As I was working on a PC, I installed [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl) to run a Linux environment and use bash commands.
 > - I opted not to provide detailed instructions for `Step 2: Setting up RSK Local Node` as these are comprehensively explained in the page it links to. In a realistic documentation package, it would naturally link out rather than repeat the information.  
 
-#### Contribution
+#### - Contribution
 
-In this particular instance, there was no collaboration as it was a theoretical exercise based on publicly-available code in the repository.
+In this particular instance I did not actually contribute to the project or collaborate, as it was a theoretical exercise for the purposes of my own practice.
 
-#### Impact
+#### - Impact
 
-If the tutorial were applied in a real-world scenario, I believe it would help engineers understand how to approach using ethers.js, clear up any doubts, and hopefully entice potential customers to confidently interact with Rootstock.
+Theoretically, if the tutorial were applied in a real-world scenario, I believe it would help engineers understand how to use ethers.js in the context of Rootstock. Hopefully, this tutorial would serve to entice potential customers to interact with the Rootstock blockchain.
 
 # Listening to smart contract events from a frontend DApp via Ethers.js
 
