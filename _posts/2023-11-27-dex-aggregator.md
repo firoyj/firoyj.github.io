@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Overview: DEX Aggregator"
+title: "Overview: DEX aggregator"
 excerpt: "Entropic protocol delivers a sophisticated cross-ledger DEX aggregator. It enables optimal execution through market aggregation. By tapping into Automated Market Makers (AMMs) across multiple chains, it achieves a dark pool-like execution of orders. This means users can seamlessly initiate a swap of any supported token, then the protocol finds the best route for that swap, whether it's a simple AMM swap or a more complex movement of tokens across different networks to achieve the best outcome."
 ---
 
@@ -29,19 +29,19 @@ In terms of my contribution, I worked closely with the Entropic product manager 
 - New joiners were able to onboard quicker and with more confidence.
 - My work to deploy and demonstrate Docs-as-code practices in GitHub revolutionized the documentation workflow for the whole team, enhancing collaboration and transparency.
 
-# Exploring Cross-ledger DEX Aggregation with Entropic Protocol and X  Token
+# Exploring cross-ledger DEX aggregation with Entropic protocol and X token
 
-## Understand the Protocol
+## Understand the protocol
 
 Entropic delivers a sophisticated cross-ledger DEX aggregator. It enables optimal execution through market aggregation. By tapping into Automated Market Makers (AMMs) across multiple chains, it achieves a [dark pool-like](https://www.investopedia.com/articles/markets/050614/introduction-dark-pools.asp) execution of orders. This means users can seamlessly initiate a swap of any supported token, then the protocol finds the best route for that swap, whether it's a simple AMM swap or a more complex movement of tokens across different networks to achieve the best outcome.
 
 The protocol excels in 3 fundamental features:
 
-### 1. Coincidence of Wants
+### 1. Coincidence of wants
 
 Entropic introduces a cross-chain adaptation of Coincidence of Wants (CoW). It collects CoWs from various ledgers and matches the orders off-chain. This smart matching engine sorts orders looking for any potential matches. It then navigates through larger networks and tokens to access the more exotic ones. Entropic's algorithm optimizes output for the user since CoW is often cheaper, faster, and more reliable.
 
-### 2. Cross-Chain Functionality
+### 2. Cross-chain functionality
 
 Being capable of transferring any cryptographic asset from one ledger to another, Entropic is, by definition, cross-chain and cross-layer. It utilizes TROPIC token for cross-chain transfers, which involves bundling swaps and settling asset exchanges through cross-chain CoWs. The remaining orders are processed utilizing bridges.
 
