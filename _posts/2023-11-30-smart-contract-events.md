@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Listening to cmart contract events with ethers.js"
+title: "Tutorial: Listening to smart contract events with ethers.js"
 mathjax: true
 layout: post
 categories: github, website
