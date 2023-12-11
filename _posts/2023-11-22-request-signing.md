@@ -1,5 +1,5 @@
 ---
-title: "[Draft] Guide: Request signing"
+title: "Guide: Request signing"
 mathjax: true
 layout: post
 categories: github, website
