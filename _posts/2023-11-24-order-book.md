@@ -1,5 +1,5 @@
 ---
-title: "[Draft] Order Book"
+title: "Order Book"
 mathjax: true
 layout: post
 categories: github, website
