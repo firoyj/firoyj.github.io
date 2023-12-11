@@ -6,19 +6,6 @@ categories: github, website
 excerpt: "Sending and receiving payments with the Form3 Payments API is quick and simple, but sometimes a payment submission fails for one reason or another. If this happens, the API provides an error message to make it easy to identify the cause of the error.<br><br>This tutorial looks at different errors that can occur during a payment submission and explains how they can be diagnosed."
 ---
 
-### Context and problem
-
-
-
-### Contribution
-
-As part of the Form3 technical writer team, a large part of my work involved mantenance of the Form3 API documentation
-
-
-### Impact
-
-This tutorial on Payment exception handing (https://www.api-docs.form3.tech/api/tutorials/getting-started/payment-exception-handling) helps the client financial services understand how to interact with our Payments API.
-
 # Payment exception handling
 
 Sending and receiving payments with the Form3 Payments API is quick and simple, but sometimes a payment submission fails for one reason or another. If this happens, the API provides an error message to make it easy to identify the cause of the error.
