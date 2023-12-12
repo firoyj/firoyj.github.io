@@ -36,7 +36,7 @@ Depending on the kind of error, the server will respond differently. In case the
 
 If the syntax is correct, but a field contains invalid data (for example, the amount attribute contains letters), the creation of the resource will fail and an error message will be returned:
 
-```
+```javascript
 {
     "error_code": "5fa8f56c-d0d1-422b-aba7-f8c9522d6388",
     "error_message": "Validation failed: Field data.attributes.amount : must match \"^[0-9.]{0,20}$\" "
@@ -57,7 +57,7 @@ The example below sends an FPS payment with a missing `amount` field. The first 
 
 ## Example Create a Payment resource without an amount field
 
-```
+```javascript
 {
     "data": {
         "type": "payments",
@@ -96,7 +96,7 @@ The call returns a `201 Created` HTTP code. To submit the payment, we create a P
 
 ## Example Create Payment Submission resource
 
-```
+```javascript
 {
   "data": {
     "id": "abf05458-69de-4949-9c5d-8ed3c15d966a",
@@ -114,7 +114,7 @@ The resulting response contains an explanation of the error in the `status_reaso
 
 ## Payment submission fails due to missing amount attribute in the payment resource.
 
-```
+```javascript
 {
     "data": {
         "type": "payment_submissions",
@@ -164,7 +164,7 @@ Once the submission has been processed by Form3 and sent to the FPS scheme simul
 
 ## Example Payment submission failed due to unknown sort code or account number
 
-```
+```javascript
 {
     "data": {
         "type": "payment_submissions",
