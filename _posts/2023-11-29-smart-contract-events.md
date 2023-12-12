@@ -24,6 +24,8 @@ In this particular instance I did not actually contribute to the project or coll
 
 Theoretically, if the tutorial were applied in a real-world scenario, I believe it would help engineers understand how to use ethers.js in the context of Rootstock. Hopefully, this tutorial would serve to entice potential customers to interact with the Rootstock blockchain.
 
+---
+
 # Listening to smart contract events from a frontend dApp via Ethers.js
 
 #### Introduction
