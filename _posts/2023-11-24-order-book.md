@@ -5,7 +5,7 @@ layout: post
 categories: github, website
 excerpt: "The Order Book collects groups of requests which are waiting to be processed. It does this at intervals of 5-10 seconds. Subsequently, it employs an algorithm to determine optimal routes for each request, optimizing the overall transaction efficiency.
 <br><br>
-After receiving a response from the algorithm, the Order Book also sorts requests for any possible **batch** transactions. The Order Book seeks to batch requests, e.g., into the same tokens on the same chain. If possible batches are found, the `Order Manager` sends them to the `Order Executer` for processing."
+After receiving a response from the algorithm, the Order Book also sorts requests for any possible *batch* transactions. The Order Book seeks to batch requests, e.g., into the same tokens on the same chain. If possible batches are found, the `Order Manager` sends them to the `Order Executer` for processing."
 ---
 
 ## Context and background
