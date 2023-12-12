@@ -29,6 +29,8 @@ In terms of my contribution, I worked closely with the Entropic product manager 
 - New joiners were able to onboard quicker and with more confidence.
 - My work to deploy and demonstrate Docs-as-code practices in GitHub revolutionized the documentation workflow for the whole team, enhancing collaboration and transparency.
 
+---
+
 # Exploring cross-ledger DEX aggregation with Entropic protocol and X token
 
 ## Understand the protocol
