@@ -25,25 +25,23 @@ After receiving a response from the algorithm, the Order Book also sorts request
 
 This is an example of the user request interface:
 
-````
 ```JSON
 `{
-  owner: "0x123", // string - user
+  owner: "0x123", // string - Ethereum address of the user initiating the request.
   source: {
-    chainId: 1, // number - source chain
-    tokenAddress: "0x123", // string - source token
-    amount: 1000, // number - amount to swap
+    chainId: 1, // number - Numeric identifier for the source chain.
+    tokenAddress: "0x123", // string - Ethereum address of the source token.
+    amount: 1000, // number - Numeric value representing the amount to swap.
   },
   destination: {
-    chainId: 3, // number - destination chain
-    tokenAddress: "0x123", // string - destination token
-    minAmount: 950, // number - minimal acceptable amount
+    chainId: 3, // number - Numeric identifier for the destination chain.
+    tokenAddress: "0x123", // string - Ethereum address of the destination token.
+    minAmount: 950, // number - Numeric value representing the minimum acceptable amount.
   },
-  route: "fastest", // enum "fastest" | "cheapest" | "best"
-  cow: "both", // enum "both" | "only-cow" | "no-cow"
+  route: "fastest", // Enum representing the preferred route - "fastest," "cheapest," or "best."
+  cow: "both", // Enum indicating whether the request involves both chains ("both"), only the source chain ("only-cow"), or no chains ("no-cow").
 }`
 ```
-````
 
 ## Receive user request
 
