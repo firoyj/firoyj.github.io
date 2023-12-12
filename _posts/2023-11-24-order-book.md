@@ -5,14 +5,16 @@ layout: post
 categories: github, website
 excerpt: "The Order Book collects groups of requests which are waiting to be processed. It does this at intervals of 5-10 seconds. Subsequently, it employs an algorithm to determine optimal routes for each request, optimizing the overall transaction efficiency.
 <br><br>
-After receiving a response from the algorithm, the Order Book also sorts requests for any possible **batch** transactions. The Order Book tries to batch requests, e.g., into the same tokens on the same chain. If possible batches are found, the `Order Manager` sends them to the `Order Executer` for processing."
+After receiving a response from the algorithm, the Order Book also sorts requests for any possible **batch** transactions. The Order Book seeks to batch requests, e.g., into the same tokens on the same chain. If possible batches are found, the `Order Manager` sends them to the `Order Executer` for processing."
 ---
 
 ## Context and background
 
-As the first technical writer at [Advanced Blockchain](https://www.advancedblockchain.com/), an incubator for blockchain projects, I arrived to a notable lack of technical documentation. In a dynamic, fast-paced environment developer teams were forging ahead creating novel DeFi projects. However, the gaps in documentation resulted in critical bottlenecks and challenges for onboarding, code testing, maintenance, and importantly, shipping the products.
+As the first technical writer at [Advanced Blockchain](https://www.advancedblockchain.com/), an incubator for blockchain projects, I encountered a significant lack of technical documentation upon joining. In a dynamic, fast-paced environment developer teams were forging ahead creating novel DeFi projects. However, the gaps in documentation resulted in critical bottlenecks and challenges for onboarding, code testing, maintenance, and importantly, shipping the products.
 
-As most of the documentation I created at Advanced Blockchain is protected by non-disclosure agreements, I'm unable to share it here. The writing sample below is an excerpt of a high-level overview, the intended audience being potential users of the dAPP Entropic.
+As most of the documentation I created at Advanced Blockchain is protected by non-disclosure agreements, I'm only able to share limited excerpts here. The writing sample below is part of a high-level overview, the intended audience being potential users of the dAPP Entropic.
+
+It describes a function of the Entropic protocol, the Order Book, and it is related to the writing sample: [Overview: DEX aggregator](https://firoyj.github.io/dex-aggregator/), which harnesses the concept of 'Coincidence of Wants'.
 
 ---
 
@@ -50,14 +52,22 @@ This is an example of the user request interface:
 }
 ```
 
-## Receive user request
+## Receiving user requests
 
-The user sends a request to an endpoint (POST) with the interface, which is rejected if the request interface is invalid (e.g., missing parameters, negative numbers, incorrect addresses), otherwise it proceeds to the next step.
+Upon submitting a valid request — via the user request interface — to the specified endpoint (through a POST request), the system responds with an acknowledgment, ensuring the user is promptly informed of the successful receipt of their request.
 
-## Verify allowance
+Whereas, if any discrepancies or errors are detected (e.g., missing parameters, negative numbers, or incorrect addresses), the system promptly rejects the request, providing users with clear and actionable feedback.
 
-The user’s spending allowance is checked against Entropic’s contract. If sufficient balance and allowance is found to execute the transaction, it proceeds to the next step, otherwise it is rejected.
+## Verifying allowance
 
-## Save in the database
+The user’s spending allowance is checked against Entropic’s contract. If the user has sufficient balance and allowance, the process advances to the next step. If not, the system promptly rejects the transaction, ensuring the integrity of the overall process, and the user is informed.
 
-If all the above steps succeed, the user’s request is saved in the database for later use. This database contains the data used by the `Order Manager`.
+## Saving in the database
+
+If all the above steps are successful, the system saves the user’s request in the database. The database captures key data elements, such as user details, source and destination details, selected route, and any additional relevant parameters. 
+
+This stored data contributes to strategic decision-making within the system and is utilized by the `Order Manager` for ongoing order management.
+
+## Final considerations
+
+In summary, the Order Book plays a pivotal role in handling user requests efficiently through a structured process of request reception, batching, allowance verification, and database storage. The described user interface, request processing steps, and data storage mechanisms collectively contribute to the overall functionality of the system. By understanding these key components, users and developers can gain insights into the inner workings of Entropic, fostering a deeper appreciation for its robust and effective transaction management system.
