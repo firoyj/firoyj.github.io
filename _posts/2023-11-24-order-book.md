@@ -1,3 +1,4 @@
+
 ---
 title: "Overview: Order Book"
 mathjax: true
@@ -33,7 +34,7 @@ After receiving a response from the algorithm, the Order Book also sorts request
 
 This is an example of the user request interface:
 
-```JSON
+```javascript
 {
   owner: "0x123", // string - Ethereum address of the user initiating the request.
   source: {
