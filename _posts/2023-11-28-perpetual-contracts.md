@@ -63,13 +63,16 @@ When the contract price significantly diverges from the spot price on other exch
 1. If they hold a position elsewhere, they can use Infinix Protocol to take the inverse position and earn funding payments.
 2. If they buy or sell an asset elsewhere, they can long or short that asset using Infinix Protocol, expectating the price to move back toward the spot price.
 
+![image](https://github.com/firoyj/firoyj.github.io/assets/101256554/4aafe62e-a43f-4c88-831d-cc4eddc9d447)
+Fig. 1 - Oracle API
+
 ## Oracle API
 
-The Infinix Protocol relies on an index or spot price feed for the underlying asset, provided by IFX. This connection ensures accurate pricing and data integrity.
+The Infinix Protocol relies on a fundamental component: an index or spot price feed sourced from an oracle, specifically supplied by [API3](https://api3.org/). Functioning as a DAO, API3 provides open-source technology and tooling, facilitating the seamless integration of Web APIs directly into smart contracts through first-party oracles. Think of this as connecting off-chain, real world data points in Web2 to applications in Web3. This integration is critical in ensuring the precision of pricing information and integrity of data throughout the Infinix Protocol.
 
-Infinix accesses IFX data beacons, which are atomic data feeds powered by a first-party oracle. These beacons serve as inputs for calculating the logarithmic options pricing model. Partnering with IFX allows Infinix to scale its data categories and pairs while ensuring the data feeds are covered in the event of problems or manipulation, common in the data oracle space. _YYYY_ has a well-reserved coverage pool for valid claims.
+Infinix accesses INFX data beacons, which are atomic data feeds powered by the oracle. These beacons serve as inputs for calculating the logarithmic options pricing model. Partnering with INFX allows Infinix to scale its data categories and pairs while ensuring the data feeds are covered in the event of problems or manipulation, common in the data oracle space. INFX has a well-reserved coverage pool for valid claims.
 
-IFX is a critical Web3 building block known for its reliable and reputable data feeds. Diverse data sets are essential for attracting users, thereby increasing the total value locked as well as fee revenue from trading positions opening and closing.
+INFX is a critical Web3 building block known for its reliable and reputable data feeds. Diverse data sets are essential for attracting users, thereby increasing the total value locked as well as fee revenue from trading positions opening and closing.
 
 ## vAMM (Virtual Automated Market Maker)
 
