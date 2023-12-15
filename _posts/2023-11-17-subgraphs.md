@@ -7,24 +7,38 @@ excerpt: "Welcome to the tutorial on creating powerful Subgraphs for blockchain 
 Subgraphs offer swift access to historical blockchain data with minimal delays. They serve as off-chain data storage, equipped with a GraphQL API and virtually no limits, making data processing and manipulation a breeze. Their ease of use and effectiveness make them a valuable tool for developers."
 ---
 
+## Context and background:
+
+As the first technical writer at [Advanced Blockchain](https://www.advancedblockchain.com/), an incubator for blockchain projects, I arrived to a significant lack of technical documentation. In a dynamic, fast-paced setting developers were forging ahead with novel DeFi projects, but the documentation gaps presented critical bottlenecks. This resulted in challenges for testing code, maintenance, and onboarding.
+
+I assessed existing documentation, aligning it with the company goals to develop a scope and strategy for technical documentation.
+
+The writing sample below is an excerpt of a tutorial on Subgraphs based on a couple of meetings I had with developers on the subject.
+
+---
+
 # Subgraphs simplified: A practical tutorial
 
 ## Introduction
 
-Welcome to the tutorial on creating powerful Subgraphs for blockchain data analysis and manipulation. In this guide, we will walk you through the process of efficiently leveraging subgraphs and their potential applications.
+Welcome to our tutorial on harnessing the power of Subgraphs for insightful blockchain data analysis and manipulation. Throughout this guide, we'll walk through the process of efficiently using subgraphs and explore their diverse applications.
 
 ## Understanding subgraphs
 
-Subgraphs offer swift access to historical blockchain data with minimal delays. They serve as off-chain data storage, equipped with a GraphQL API and virtually no limits, making data processing and manipulation a breeze. Their ease of use and effectiveness make them a valuable tool for developers.
+Subgraphs offer swift access to historical blockchain data with minimal delays. They serve as off-chain data storage solutions, equipped with a [GraphQL](https://graphql.org/) API, imposing virtually no limits on data processing and manipulation. Their ease of use and effectiveness make them a valuable tool for developers.
 
 ## When to use subgraphs
 
 Subgraphs are ideal for the following scenarios:
 
-- When the blockchain you are working with is supported (note: some chains might not be supported).
-- Dealing with large volumes of historical data on a regular basis.
-- When a short delay in listing new blocks is acceptable, as subgraphs take time to catch up.
-- _Not_ for aggregating data from various sources; deploying on multiple chains simultaneously is not yet supported.
+- **Supported Blockchains:** Ensure the blockchain you're working with is supported, noting that some chains might not be compatible.
+- **Handling Extensive Historical Data:** Ideal for managing large volumes of historical data on a regular basis.
+- **Delay in Block Listing:** When it's acceptable to have a brief delay in listing new blocks is acceptable, as subgraphs take time to catch up.
+- **Single-Chain:** Not suitable for aggregating data from various sources; deploying on multiple chains simultaneously is not yet supported.
+
+Subgraphs are custom-built open APIs designed to efficiently organize blockchain data for easy searching, retrieval, and querying. This enables applications to access specific data without the need to sift through the entire blockchain.
+
+As open APIs, developers can integrate subgraphs into their decentralized applications (dApps).
 
 ## Implementing subgraphs: A step-by-step approach
 
