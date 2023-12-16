@@ -45,7 +45,7 @@ Before proceeding, ensure you have the following prerequisites:
 
 ### Step 1: Installing node.js
 
-Node.js is a vital component for development, especially with tools such as Hardhat. Ensure you install Version 12 or later of node.js using the following:
+Node.js is a vital component for development, especially with tools such as Hardhat. Ensure you install Version 12 or later of node.js by running the following in the terminal:
 
 - #### Linux
 
@@ -80,7 +80,7 @@ To interact with RSK, you need a local node. Follow the installation instruction
 
 ### Step 3: Setting up Hardhat
 
-Next, set up Hardhat, a development environment for Ethereum-like networks. Navigate to the project folder and install the required packages:
+Next, set up Hardhat, a development environment for Ethereum-like networks. In the terminal, navigate to the project folder and install the required packages:
 
 ```shell
 cd your-project-folder
@@ -89,7 +89,7 @@ npm install
 
 ### Step 4: Installing ethers.js
 
-Now you're ready to install ethers.js:
+Now you're ready to install ethers.js, run the following command:
 
 ```shell
 npm install --save ethers
@@ -99,7 +99,7 @@ npm install --save ethers
 
 ### Step 5: Providing a mnemonic phrase for RSK testnet deployment
 
-To deploy on the RSK testnet, generate a secure 12-word mnemonic phrase and store it:
+To deploy on the RSK testnet, generate a secure 12-word mnemonic phrase and store it, run:
 
 ```shell
 mnemonics > .testnet.seed-phrase
