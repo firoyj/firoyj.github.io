@@ -32,7 +32,7 @@ Theoretically, if the tutorial were applied in a real-world scenario, I believe 
 
 [Ethers.js](https://docs.ethers.org/v5/) is a compact JavaScript library that you can use to interact with the Ethereum blockchain. It serves as a toolkit for building decentralized applications on [EVM](https://ethereum.org/en/developers/docs/evm/)-compatible blockchain networks.
 
-In this guide, we walk you through the necessary steps to listen to smart contract events via ethers.js, covering the installation and configuration of the tools and technologies required.
+In this guide, we walk you through the necessary steps to install and configure the tools and technologies you need to listen to smart contract events via ethers.js.
 
 ### Prerequisites
 
@@ -80,12 +80,26 @@ To interact with RSK, you need a local node. Follow the installation instruction
 
 ### Step 3: Setting up Hardhat
 
-Next, set up Hardhat, a development environment for Ethereum-like networks. In the terminal, navigate to the project folder and install the required packages:
+Next, set up [Hardhat](https://hardhat.org/hardhat-runner/docs/getting-started#overview), a development environment for Ethereum-like networks. We recommend Hardhat instead ofother tools because it offers a built-in testing environment, advanced debugging features, and task automation system.  
+
+**Install:**
+In the terminal, navigate to the project folder and install the required packages:
 
 ```shell
 cd your-project-folder
-npm install
+npm install --save-dev hardhat
 ```
+
+**Initialize:**
+Initialize a Hardhat Project in your current directory:
+
+```shell
+npx hardhat
+```
+It will prompt you to choose a network configuration and create the necessary files, including `hardhat.config.js`.
+
+**Edit `hardhat.config.js`:**
+Open the generated `hardhat.config.js` file and configure it the settings for networks, solidity versions, and other project-specific configurations.
 
 ### Step 4: Installing ethers.js
 
