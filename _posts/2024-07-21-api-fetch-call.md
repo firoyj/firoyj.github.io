@@ -4,20 +4,87 @@ Get a single Recall Decision resource.
 
 #### HTTP Request
 
-v1/transaction/payments/{payment_id}/recalls/{recall_id}/decisions/{decision_id}
+`v1/transaction/payments/{payment_id}/recalls/{recall_id}/decisions/{decision_id}`
 
 ### URL Parameters
 
 `decision_id`
-REQUIRED
-string, unique identifier (UUID)
+REQUIRED<br>
+**string, unique identifier (UUID)**<br>
 ID of the Payment Recall Decision resource to fetch.
 
+`payment_id`
+REQUIRED<br>
+**string, unique identifier (UUID)**<br>
+ID of the Payment resource that is being recalled.
 
+`recall_id`
+REQUIRED<br>
+**string, unique identifier (UUID)**<br>
+ID of the Payment Recall resource that is admitted.
 
-ID of the Payment Recall Decision resource to fetch.
+### Response Attributes
 
-### Fetch a Payment Recall Decision
+`answer`
+ALWAYS<br>
+**string, enum**<br>
+Answer to the recall request.
+
+`agents`
+SOMETIMES<br>
+**object**<br>
+Information around the Agent who has taken charges in relation to the recall.
+
+`charges_amount`
+SOMETIMES<br>
+**object**<br>
+Information about the charges.
+
+`reason`
+SOMETIMES<br>
+**string**<br>
+Further explanation of the reason given in reason_code. Only supported for certain reason codes, see the value descriptions in reason_code for which codes require a reason. Max 105 characters. Only applicable for FedNow.
+
+`reason_code`
+SOMETIMES<br>
+**string, enum**<br>
+Reason for a rejected decision. Populated when answer is rejected, otherwise ignored.
+Must be a 4-character code allowed from the ISO 20022 externalized PaymentCancellationRejection1Code list .
+
+`recall_amount`
+SOMETIMES<br>
+**object**<br>
+Amount to be returned if the recall is partially accepted by the counterparty.
+
+`resolution_related_information`
+SOMETIMES<br>
+**object**<br>
+Information about the return transaction that is returning the payment.
+
+### Response Relationships
+
+`decision_admission`
+ALWAYS
+LINK RELATIONSHIP<br>
+**object**<br>
+Information about the Recall Decision Admission resource.
+
+`decision_submission`
+ALWAYS<br>
+**object**<br>
+Information about the Recall Decision Submission resource.
+
+`payment`
+ALWAYS<br>
+**object**<br>
+Information about the original Payment Recall resource that is being recalled.
+
+`recall`
+ALWAYS<br>
+**object**<br>
+Information about the Recall resource.
+
+### Example - Fetch a Payment Recall Decision
 
 ```
 GET v1/transaction/payments/c419bbef-f586-48b1-bbbd-7ef4aef21ec2/recalls/a74b9b67-fa61-4013-ab0e-a252963d4151/decisions/c15ee5ce-2d78-42e1-a03f-26805f526f8d
