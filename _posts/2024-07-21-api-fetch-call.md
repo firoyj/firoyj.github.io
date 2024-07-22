@@ -31,13 +31,15 @@ ALWAYS
 Answer to the recall request.
 
 <details open>
-<summary>Show values</summary>
-<br>
+<summary>Show values</summary>  
   
-  - `accepted`<br>Recall has been accepted. If partially accepted then `recall_amount.amount` will advise what amount will be 
+  - `accepted`
+    Recall has been accepted. If partially accepted then `recall_amount.amount` will advise what amount will be 
   returned.  
-  - `pending`<br>Recall is still pending. Used in FedNow only.  
-  - `rejected`<br>Recall has been rejected.
+  - `pending`
+    Recall is still pending. Used in FedNow only.  
+  - `rejected`
+    Recall has been rejected.
 
 </details>
 
@@ -47,10 +49,10 @@ SOMETIMES
 Information around the Agent who has taken charges in relation to the recall.
 
 <details open>
-<summary>Show children</summary>
-<br>
+<summary>Show children</summary>  
   
-`.identification`<br>Information about the financial institution.  
+`.identification`  
+Information about the financial institution.  
 
   <details open>
   <summary>Show children</summary>  
@@ -67,25 +69,25 @@ Information around the Agent who has taken charges in relation to the recall.
 
   </details>
 
-`.role`
-SOMETIMES  
-**string, enum**  
-Role of the agent in the payment chain. Enum of pre-defined values, new values can be added when needed, e.g. `InstructingAgent`.
+  `.role`
+  SOMETIMES  
+  **string, enum**  
+  Role of the agent in the payment chain. Enum of pre-defined values, new values can be added when needed, e.g. `InstructingAgent`.
 
-  <details open>
-  <summary>Show values</summary>  
+    <details open>
+    <summary>Show values</summary>  
 
-  `ChargesAgent`  
-  Agent that takes the transaction charges or to which the transaction charges are due.
+    `ChargesAgent`  
+    Agent that takes the transaction charges or to which the transaction charges are due.
   
+    </details>
+
   </details>
 
-</details>
-
-`charges_amount`
-SOMETIMES  
-**object**  
-Information about the charges.
+  `charges_amount`
+  SOMETIMES  
+  **object**  
+  Information about the charges.
 
   <details open>
   <summary>Show children</summary>  
@@ -96,8 +98,8 @@ Information about the charges.
   Amount of charges to be taken for the recall and not returned to the recall originator.
 
   `.currency`
-  SOMETIMES
-  **string**
+  SOMETIMES  
+  **string**  
   [ISO currency code](https://www.iso.org/iso-4217-currency-codes.html)  for the charges amount. Must be `USD`.
 
   `reason`
@@ -106,25 +108,24 @@ Information about the charges.
   Further explanation of the reason given in `reason_code`. Only supported for certain reason codes, see the value descriptions in `reason_code` for which codes require a reason. Max 105 characters.
 
   `reason_code`
-  SOMETIMES
-  **string, enum**
-  Reason for a rejected decision. Populated when answer is rejected, otherwise ignored.
-  Must be a 4-character code allowed from the [ISO 20022 externalized PaymentCancellationRejection1Code](https://www.iso20022.org/catalogue-messages/additional-content-messages/external-code-sets) list .
+  SOMETIMES  
+  **string, enum**  
+  Reason for a rejected decision. Populated when answer is rejected, otherwise ignored. Must be a 4-character code allowed from the [ISO 20022 externalized PaymentCancellationRejection1Code](https://www.iso20022.org/catalogue-messages/additional-content-messages/external-code-sets) list .
 
   `recall_amount`
-  SOMETIMES
-  **object**
+  SOMETIMES  
+  **object**  
   Amount to be returned if the recall is partially accepted by the counterparty.
 
   `resolution_related_information`
-  SOMETIMES
-  **object**
+  SOMETIMES  
+  **object**  
   Information about the return transaction that is returning the payment.
 
 ### Response Relationships
 
 `decision_admission`
-ALWAYS    
+ALWAYS  
 **object**  
 Information about the Recall Decision Admission resource.
 
