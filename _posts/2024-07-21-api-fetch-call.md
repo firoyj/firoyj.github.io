@@ -9,75 +9,73 @@ Get a single Recall Decision resource.
 ### URL Parameters
 
 `decision_id`
-REQUIRED<br>
-**string, unique identifier (UUID)**<br>
+REQUIRED  
+**string, unique identifier (UUID)**  
 ID of the Payment Recall Decision resource to fetch.
 
 `payment_id`
-REQUIRED<br>
-**string, unique identifier (UUID)**<br>
+REQUIRED  
+**string, unique identifier (UUID)**  
 ID of the Payment resource that is being recalled.
 
 `recall_id`
-REQUIRED<br>
-**string, unique identifier (UUID)**<br>
+REQUIRED  
+**string, unique identifier (UUID)**  
 ID of the Payment Recall resource that is admitted.
 
 ### Response Attributes
 
 `answer`
-ALWAYS<br>
-**string, enum**<br>
+ALWAYS  
+**string, enum**  
 Answer to the recall request.
 
 <details open>
 <summary>Show values</summary>
 <br>
   
-- `accepted`<br>Recall has been accepted. If partially accepted then `recall_amount.amount` will advise what amount will be 
-  returned.<br>
-- `pending`<br>Recall is still pending. Used in FedNow only.<br>
-- `rejected`<br>Recall has been rejected.
+  - `accepted`<br>Recall has been accepted. If partially accepted then `recall_amount.amount` will advise what amount will be 
+  returned.  
+  - `pending`<br>Recall is still pending. Used in FedNow only.  
+  - `rejected`<br>Recall has been rejected.
 
 </details>
 
 `agents`
-SOMETIMES<br>
-**object**<br>
+SOMETIMES  
+**object**  
 Information around the Agent who has taken charges in relation to the recall.
 
 <details open>
 <summary>Show children</summary>
 <br>
   
-`.identification`<br>Information about the financial institution.<br>
+`.identification`<br>Information about the financial institution.  
 
   <details open>
-  <summary>Show children</summary>
-  <br>
+  <summary>Show children</summary>  
 
   `.bank_id`
-  SOMETIMES<br>
-  **string**<br>
+  SOMETIMES  
+  **string**  
   Identification code of the financial institution.
 
   `.bank_id_code`
-  SOMETIMES<br>
-  **string**<br>
+  SOMETIMES  
+  **string**  
   The type of identification provided in `bank_id`. Always `USABA`.
 
   </details>
 
 `.role`
-SOMETIMES<br>
-**string, enum**<br>
+SOMETIMES  
+**string, enum**  
 Role of the agent in the payment chain. Enum of pre-defined values, new values can be added when needed, e.g. `InstructingAgent`.
 
   <details open>
-  <summary>Show values</summary>
-  <br>
+  <summary>Show values</summary>  
 
-  `ChargesAgent`<br>
+  `ChargesAgent`  
   Agent that takes the transaction charges or to which the transaction charges are due.
   
   </details>
@@ -85,66 +83,64 @@ Role of the agent in the payment chain. Enum of pre-defined values, new values c
 </details>
 
 `charges_amount`
-SOMETIMES<br>
-**object**<br>
+SOMETIMES  
+**object**  
 Information about the charges.
 
-<details open>
-<summary>Show children</summary>
-<br>
+  <details open>
+  <summary>Show children</summary>  
 
-`.amount`
-SOMETIMES<br>
-**string**<br>
-Amount of charges to be taken for the recall and not returned to the recall originator.
+  `.amount`
+  SOMETIMES  
+  **string**
+  Amount of charges to be taken for the recall and not returned to the recall originator.
 
-`.currency`
-SOMETIMES<br>
-**string**<br>
-[ISO currency code](https://www.iso.org/iso-4217-currency-codes.html)  for the charges amount. Must be `USD`.
+  `.currency`
+  SOMETIMES
+  **string**
+  [ISO currency code](https://www.iso.org/iso-4217-currency-codes.html)  for the charges amount. Must be `USD`.
 
-`reason`
-SOMETIMES<br>
-**string**<br>
-Further explanation of the reason given in `reason_code`. Only supported for certain reason codes, see the value descriptions in `reason_code` for which codes require a reason. Max 105 characters.
+  `reason`
+  SOMETIMES  
+  **string**  
+  Further explanation of the reason given in `reason_code`. Only supported for certain reason codes, see the value descriptions in `reason_code` for which codes require a reason. Max 105 characters.
 
-`reason_code`
-SOMETIMES<br>
-**string, enum**<br>
-Reason for a rejected decision. Populated when answer is rejected, otherwise ignored.
-Must be a 4-character code allowed from the [ISO 20022 externalized PaymentCancellationRejection1Code](https://www.iso20022.org/catalogue-messages/additional-content-messages/external-code-sets) list .
+  `reason_code`
+  SOMETIMES
+  **string, enum**
+  Reason for a rejected decision. Populated when answer is rejected, otherwise ignored.
+  Must be a 4-character code allowed from the [ISO 20022 externalized PaymentCancellationRejection1Code](https://www.iso20022.org/catalogue-messages/additional-content-messages/external-code-sets) list .
 
-`recall_amount`
-SOMETIMES<br>
-**object**<br>
-Amount to be returned if the recall is partially accepted by the counterparty.
+  `recall_amount`
+  SOMETIMES
+  **object**
+  Amount to be returned if the recall is partially accepted by the counterparty.
 
-`resolution_related_information`
-SOMETIMES<br>
-**object**<br>
-Information about the return transaction that is returning the payment.
+  `resolution_related_information`
+  SOMETIMES
+  **object**
+  Information about the return transaction that is returning the payment.
 
 ### Response Relationships
 
 `decision_admission`
-ALWAYS
-LINK RELATIONSHIP<br>
-**object**<br>
+ALWAYS    
+**object**  
 Information about the Recall Decision Admission resource.
 
 `decision_submission`
-ALWAYS<br>
-**object**<br>
+ALWAYS  
+**object**  
 Information about the Recall Decision Submission resource.
 
 `payment`
-ALWAYS<br>
-**object**<br>
+ALWAYS  
+**object**  
 Information about the original Payment Recall resource that is being recalled.
 
 `recall`
-ALWAYS<br>
-**object**<br>
+ALWAYS  
+**object**  
 Information about the Recall resource.
 
 ### Example - Fetch a Payment Recall Decision
@@ -157,7 +153,7 @@ Date: Mon, 10 June 2024 20:04:24 GMT
 Authorization: Signature keyId="49a7aac7-3cd0-4eca-9697-b195fc2a898a",algorithm="rsa-sha256", headers="(request-target) accept host date", signature="dGVzdHNldHNldHNldHNldHNhZGFkYXNkIGkgdGFraWUgdGFt"
 ```
 
-### Response
+### Example - Response
 
 ``` 
 {
