@@ -2,7 +2,7 @@
 
 Get a single Recall Decision resource.
 
-#### HTTP Request
+### HTTP Request
 
 `v1/transaction/payments/{payment_id}/recalls/{recall_id}/decisions/{decision_id}`
 
@@ -31,15 +31,18 @@ ALWAYS
 Answer to the recall request.
 
 <details>
-  <summary>Show values</summary>  
-  
-  - `accepted`
-    Recall has been accepted. If partially accepted then `recall_amount.amount` will advise what amount will be returned.  
-  - `pending`
-    Recall is still pending. Used in FedNow only.  
-  - `rejected`
-    Recall has been rejected.
-
+  <summary>Show values</summary>
+  <ul>
+    <li><code>accepted</code>
+      Recall has been accepted. If partially accepted then `recall_amount.amount` will advise what amount will be returned.
+    </li>
+    <li><code>pending</code>
+      Recall is still pending. Used in FedNow only.
+    </li>
+    <li><code>rejected</code>
+      Recall has been rejected.
+    </li>
+  </ul>
 </details>
 
 `agents`
@@ -48,38 +51,40 @@ SOMETIMES
 Information around the Agent who has taken charges in relation to the recall.
 
 <details>
-  <summary>Show children</summary>  
-  
-  `.identification`  
-  Information about the financial institution.  
-
-  <details>
-    <summary>Show children</summary>  
-
-    `.bank_id`
-    SOMETIMES  
-    **string**  
-    Identification code of the financial institution.
-
-    `.bank_id_code`
-    SOMETIMES  
-    **string**  
-    The type of identification provided in `bank_id`. Always `USABA`.
-
-  </details>
-
-  `.role`
-  SOMETIMES  
-  **string, enum**  
-  Role of the agent in the payment chain. Enum of pre-defined values, new values can be added when needed, e.g. `InstructingAgent`.
-
-  <details>
-    <summary>Show values</summary>  
-
-    `ChargesAgent`  
-    Agent that takes the transaction charges or to which the transaction charges are due.
-  
-  </details>
+  <summary>Show children</summary>
+  <ul>
+    <li><strong>.identification</strong>
+      Information about the financial institution.
+      <details>
+        <summary>Show children</summary>  
+        <ul>
+          <li><code>bank_id</code>
+            SOMETIMES  
+            **string**  
+            Identification code of the financial institution.
+          </li>
+          <li><code>bank_id_code</code>  
+            SOMETIMES  
+            **string**  
+            The type of identification provided in `bank_id`. Always `USABA`.
+          </li>
+        </ul>
+      </details>
+    </li>
+    <li><strong>.role</strong>  
+      SOMETIMES  
+      **string, enum**  
+      Role of the agent in the payment chain. Enum of pre-defined values, new values can be added when needed, e.g. `InstructingAgent`.
+      <details>
+        <summary>Show values</summary>  
+        <ul>
+          <li><code>ChargesAgent</code>  
+            Agent that takes the transaction charges or to which the transaction charges are due.
+          </li>
+        </ul>
+      </details>
+    </li>
+  </ul>
 </details>
 
 `charges_amount`
@@ -89,17 +94,18 @@ Information about the charges.
 
 <details>
   <summary>Show children</summary>  
-
-  `.amount`
-  SOMETIMES  
-  **string**  
-  Amount of charges to be taken for the recall and not returned to the recall originator.
-
-  `.currency`
-  SOMETIMES  
-  **string**  
-  [ISO currency code](https://www.iso.org/iso-4217-currency-codes.html)  for the charges amount. Must be `USD`.
-
+  <ul>
+    <li><code>amount</code>  
+      SOMETIMES  
+      **string**  
+      Amount of charges to be taken for the recall and not returned to the recall originator.
+    </li>
+    <li><code>currency</code>  
+      SOMETIMES  
+      **string**  
+      [ISO currency code](https://www.iso.org/iso-4217-currency-codes.html) for the charges amount. Must be `USD`.
+    </li>
+  </ul>
 </details>
 
 `reason`
