@@ -30,26 +30,89 @@ ALWAYS<br>
 **string, enum**<br>
 Answer to the recall request.
 
+<details open>
+<summary>Show values</summary>
+<br>
+  
+- `accepted`<br>Recall has been accepted. If partially accepted then `recall_amount.amount` will advise what amount will be 
+  returned.<br>
+- `pending`<br>Recall is still pending. Used in FedNow only.<br>
+- `rejected`<br>Recall has been rejected.
+
+</details>
+
 `agents`
 SOMETIMES<br>
 **object**<br>
 Information around the Agent who has taken charges in relation to the recall.
+
+<details open>
+<summary>Show children</summary>
+<br>
+  
+`.identification`<br>Information about the financial institution.<br>
+
+  <details open>
+  <summary>Show children</summary>
+  <br>
+
+  `.bank_id`
+  SOMETIMES<br>
+  **string**<br>
+  Identification code of the financial institution.
+
+  `.bank_id_code`
+  SOMETIMES<br>
+  **string**<br>
+  The type of identification provided in `bank_id`. Always `USABA`.
+
+  </details>
+
+`.role`
+SOMETIMES<br>
+**string, enum**<br>
+Role of the agent in the payment chain. Enum of pre-defined values, new values can be added when needed, e.g. `InstructingAgent`.
+
+  <details open>
+  <summary>Show values</summary>
+  <br>
+
+  `ChargesAgent`<br>
+  Agent that takes the transaction charges or to which the transaction charges are due.
+  
+  </details>
+
+</details>
 
 `charges_amount`
 SOMETIMES<br>
 **object**<br>
 Information about the charges.
 
+<details open>
+<summary>Show children</summary>
+<br>
+
+`.amount`
+SOMETIMES<br>
+**string**<br>
+Amount of charges to be taken for the recall and not returned to the recall originator.
+
+`.currency`
+SOMETIMES<br>
+**string**<br>
+[ISO currency code](https://www.iso.org/iso-4217-currency-codes.html)  for the charges amount. Must be `USD`.
+
 `reason`
 SOMETIMES<br>
 **string**<br>
-Further explanation of the reason given in reason_code. Only supported for certain reason codes, see the value descriptions in reason_code for which codes require a reason. Max 105 characters. Only applicable for FedNow.
+Further explanation of the reason given in `reason_code`. Only supported for certain reason codes, see the value descriptions in `reason_code` for which codes require a reason. Max 105 characters.
 
 `reason_code`
 SOMETIMES<br>
 **string, enum**<br>
 Reason for a rejected decision. Populated when answer is rejected, otherwise ignored.
-Must be a 4-character code allowed from the ISO 20022 externalized PaymentCancellationRejection1Code list .
+Must be a 4-character code allowed from the [ISO 20022 externalized PaymentCancellationRejection1Code](https://www.iso20022.org/catalogue-messages/additional-content-messages/external-code-sets) list .
 
 `recall_amount`
 SOMETIMES<br>
