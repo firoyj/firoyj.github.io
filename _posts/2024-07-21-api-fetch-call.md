@@ -8,26 +8,26 @@ Get a single Recall Decision resource.
 
 ### URL Parameters
 
-`decision_id`
+`decision_id`  
 REQUIRED  
-**string, unique identifier (UUID)**  
+*string, unique identifier (UUID)*  
 ID of the Payment Recall Decision resource to fetch.
 
-`payment_id`
+`payment_id`  
 REQUIRED  
-**string, unique identifier (UUID)**  
+*string, unique identifier (UUID)*  
 ID of the Payment resource that is being recalled.
 
-`recall_id`
+`recall_id`  
 REQUIRED  
-**string, unique identifier (UUID)**  
+*string, unique identifier (UUID)*  
 ID of the Payment Recall resource that is admitted.
 
 ### Response Attributes
 
-`answer`
+`answer`  
 ALWAYS  
-**string, enum**  
+*string, enum*  
 Answer to the recall request.
 
 <details>
@@ -47,33 +47,33 @@ Answer to the recall request.
 
 `agents`
 SOMETIMES  
-**object**  
+*object*  
 Information around the Agent who has taken charges in relation to the recall.
 
 <details>
   <summary>Show children</summary>
   <ul>
-    <li><strong>.identification</strong>
+    <li><code>.identification</code>  
       Information about the financial institution.
       <details>
         <summary>Show children</summary>  
         <ul>
           <li><code>bank_id</code>
             SOMETIMES  
-            **string**  
+            *string*  
             Identification code of the financial institution.
           </li>
           <li><code>bank_id_code</code>  
             SOMETIMES  
-            **string**  
+            *string*  
             The type of identification provided in `bank_id`. Always `USABA`.
           </li>
         </ul>
       </details>
     </li>
-    <li><strong>.role</strong>  
+    <li><code>.role</code>  
       SOMETIMES  
-      **string, enum**  
+      *string, enum*  
       Role of the agent in the payment chain. Enum of pre-defined values, new values can be added when needed, e.g. `InstructingAgent`.
       <details>
         <summary>Show values</summary>  
@@ -87,9 +87,9 @@ Information around the Agent who has taken charges in relation to the recall.
   </ul>
 </details>
 
-`charges_amount`
+`charges_amount`  
 SOMETIMES  
-**object**  
+*object*  
 Information about the charges.
 
 <details>
@@ -97,57 +97,57 @@ Information about the charges.
   <ul>
     <li><code>amount</code>  
       SOMETIMES  
-      **string**  
+      *string*  
       Amount of charges to be taken for the recall and not returned to the recall originator.
     </li>
     <li><code>currency</code>  
       SOMETIMES  
-      **string**  
+      *string*  
       [ISO currency code](https://www.iso.org/iso-4217-currency-codes.html) for the charges amount. Must be `USD`.
     </li>
   </ul>
 </details>
 
-`reason`
+`reason`  
 SOMETIMES  
-**string**  
+*string*  
 Further explanation of the reason given in `reason_code`. Only supported for certain reason codes, see the value descriptions in `reason_code` for which codes require a reason. Max 105 characters.
 
-`reason_code`
+`reason_code`  
 SOMETIMES  
-**string, enum**  
+*string, enum*  
 Reason for a rejected decision. Populated when answer is rejected, otherwise ignored. Must be a 4-character code allowed from the [ISO 20022 externalized PaymentCancellationRejection1Code](https://www.iso20022.org/catalogue-messages/additional-content-messages/external-code-sets) list.
 
-`recall_amount`
+`recall_amount`  
 SOMETIMES  
-**object**  
+*object*  
 Amount to be returned if the recall is partially accepted by the counterparty.
 
-`resolution_related_information`
+`resolution_related_information`  
 SOMETIMES  
-**object**  
+*object*  
 Information about the return transaction that is returning the payment.
 
 ### Response Relationships
 
-`decision_admission`
+`decision_admission`  
 ALWAYS  
-**object**  
+*object*  
 Information about the Recall Decision Admission resource.
 
-`decision_submission`
+`decision_submission`  
 ALWAYS  
-**object**  
+*object*  
 Information about the Recall Decision Submission resource.
 
-`payment`
+`payment`  
 ALWAYS  
-**object**  
+*object*  
 Information about the original Payment Recall resource that is being recalled.
 
-`recall`
+`recall`  
 ALWAYS  
-**object**  
+*object*  
 Information about the Recall resource.
 
 ### Example - Fetch a Payment Recall Decision
