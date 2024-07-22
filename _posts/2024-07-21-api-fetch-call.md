@@ -30,7 +30,7 @@ ALWAYS
 **string, enum**  
 Answer to the recall request.
 
-<details open>
+<details>
 <summary>Show values</summary>  
   
   - `accepted`
@@ -41,20 +41,20 @@ Answer to the recall request.
   - `rejected`
     Recall has been rejected.
 
-</details>
+  </details>
 
-`agents`
-SOMETIMES  
-**object**  
-Information around the Agent who has taken charges in relation to the recall.
+  `agents`
+  SOMETIMES  
+  **object**  
+  Information around the Agent who has taken charges in relation to the recall.
 
-<details open>
-<summary>Show children</summary>  
+  <details>
+  <summary>Show children</summary>  
   
-`.identification`  
-Information about the financial institution.  
+  `.identification`  
+  Information about the financial institution.  
 
-  <details open>
+  <details>
   <summary>Show children</summary>  
 
   `.bank_id`
@@ -74,13 +74,13 @@ Information about the financial institution.
   **string, enum**  
   Role of the agent in the payment chain. Enum of pre-defined values, new values can be added when needed, e.g. `InstructingAgent`.
 
-    <details open>
-    <summary>Show values</summary>  
+  <details>
+  <summary>Show values</summary>  
 
-    `ChargesAgent`  
-    Agent that takes the transaction charges or to which the transaction charges are due.
+  `ChargesAgent`  
+  Agent that takes the transaction charges or to which the transaction charges are due.
   
-    </details>
+  </details>
 
   </details>
 
@@ -89,12 +89,12 @@ Information about the financial institution.
   **object**  
   Information about the charges.
 
-  <details open>
+  <details>
   <summary>Show children</summary>  
 
   `.amount`
   SOMETIMES  
-  **string**
+  **string**  
   Amount of charges to be taken for the recall and not returned to the recall originator.
 
   `.currency`
@@ -110,7 +110,7 @@ Information about the financial institution.
   `reason_code`
   SOMETIMES  
   **string, enum**  
-  Reason for a rejected decision. Populated when answer is rejected, otherwise ignored. Must be a 4-character code allowed from the [ISO 20022 externalized PaymentCancellationRejection1Code](https://www.iso20022.org/catalogue-messages/additional-content-messages/external-code-sets) list .
+  Reason for a rejected decision. Populated when answer is rejected, otherwise ignored. Must be a 4-character code allowed from the [ISO 20022 externalized PaymentCancellationRejection1Code](https://www.iso20022.org/catalogue-messages/additional-content-messages/external-code-sets) list.
 
   `recall_amount`
   SOMETIMES  
