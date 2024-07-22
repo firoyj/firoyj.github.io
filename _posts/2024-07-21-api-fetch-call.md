@@ -8,7 +8,7 @@ Get a single Recall Decision resource.
 
 ### URL Parameters
 
-`decision_id`  
+`decision_id`<br>
 REQUIRED  
 *string, unique identifier (UUID)*  
 ID of the Payment Recall Decision resource to fetch.
@@ -25,7 +25,7 @@ ID of the Payment Recall resource that is admitted.
 
 ### Response Attributes
 
-`answer`  
+`answer`<br>
 ALWAYS  
 *string, enum*  
 Answer to the recall request.
@@ -45,7 +45,7 @@ Answer to the recall request.
   </ul>
 </details>
 
-`agents`
+`agents`<br>
 SOMETIMES  
 *object*  
 Information around the Agent who has taken charges in relation to the recall.
@@ -53,32 +53,32 @@ Information around the Agent who has taken charges in relation to the recall.
 <details>
   <summary>Show children</summary>
   <ul>
-    <li><code>.identification</code>  
+    <li><code>.identification</code><br>
       Information about the financial institution.
       <details>
         <summary>Show children</summary>  
         <ul>
-          <li><code>bank_id</code>
-            SOMETIMES  
-            *string*  
+          <li><code>bank_id</code><br>
+            SOMETIMES<br>
+            *string*<br>
             Identification code of the financial institution.
           </li>
-          <li><code>bank_id_code</code>  
-            SOMETIMES  
-            *string*  
+          <li><code>bank_id_code</code><br>
+            SOMETIMES<br>
+            *string*<br>
             The type of identification provided in `bank_id`. Always `USABA`.
           </li>
         </ul>
       </details>
     </li>
-    <li><code>.role</code>  
-      SOMETIMES  
-      *string, enum*  
+    <li><code>.role</code><br>
+      SOMETIMES<br>
+      *string, enum*<br>
       Role of the agent in the payment chain. Enum of pre-defined values, new values can be added when needed, e.g. `InstructingAgent`.
       <details>
         <summary>Show values</summary>  
         <ul>
-          <li><code>ChargesAgent</code>  
+          <li><code>ChargesAgent</code><br>
             Agent that takes the transaction charges or to which the transaction charges are due.
           </li>
         </ul>
@@ -87,22 +87,22 @@ Information around the Agent who has taken charges in relation to the recall.
   </ul>
 </details>
 
-`charges_amount`  
-SOMETIMES  
-*object*  
+`charges_amount`<br>
+SOMETIMES<br>
+*object*<br>
 Information about the charges.
 
 <details>
   <summary>Show children</summary>  
   <ul>
-    <li><code>amount</code>  
-      SOMETIMES  
-      *string*  
+    <li><code>amount</code><br>
+      SOMETIMES<br>
+      *string*<br>
       Amount of charges to be taken for the recall and not returned to the recall originator.
     </li>
-    <li><code>currency</code>  
-      SOMETIMES  
-      *string*  
+    <li><code>currency</code><br>
+      SOMETIMES<br>
+      *string*<br>
       [ISO currency code](https://www.iso.org/iso-4217-currency-codes.html) for the charges amount. Must be `USD`.
     </li>
   </ul>
