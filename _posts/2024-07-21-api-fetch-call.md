@@ -30,16 +30,16 @@ ALWAYS
 *string, enum*  
 Answer to the recall request.
 
-<details>
+<details open>
   <summary>Show values</summary>
   <ul>
-    <li><code>accepted</code>
+    <li><code>accepted</code><br>
       Recall has been accepted. If partially accepted then `recall_amount.amount` will advise what amount will be returned.
     </li>
-    <li><code>pending</code>
+    <li><code>pending</code><br>
       Recall is still pending. Used in FedNow only.
     </li>
-    <li><code>rejected</code>
+    <li><code>rejected</code><br>
       Recall has been rejected.
     </li>
   </ul>
@@ -50,23 +50,23 @@ SOMETIMES
 *object*  
 Information around the Agent who has taken charges in relation to the recall.
 
-<details>
+<details open markdown="1">
   <summary>Show children</summary>
   <ul>
     <li><code>.identification</code><br>
       Information about the financial institution.
-      <details>
+      <details open markdown="1">
         <summary>Show children</summary>  
         <ul>
           <li><code>bank_id</code><br>
             SOMETIMES<br>
-            *string*<br>
+            "*string*"<br>
             Identification code of the financial institution.
           </li>
           <li><code>bank_id_code</code><br>
-            SOMETIMES<br>
+            "SOMETIMES<br>
             *string*<br>
-            The type of identification provided in `bank_id`. Always `USABA`.
+            The type of identification provided in `bank_id`. Always `USABA`."
           </li>
         </ul>
       </details>
@@ -75,6 +75,7 @@ Information around the Agent who has taken charges in relation to the recall.
       SOMETIMES<br>
       *string, enum*<br>
       Role of the agent in the payment chain. Enum of pre-defined values, new values can be added when needed, e.g. `InstructingAgent`.
+      
       <details>
         <summary>Show values</summary>  
         <ul>
@@ -92,7 +93,7 @@ SOMETIMES<br>
 *object*<br>
 Information about the charges.
 
-<details>
+<details open markdown="1">
   <summary>Show children</summary>  
   <ul>
     <li><code>amount</code><br>
