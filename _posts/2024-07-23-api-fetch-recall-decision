@@ -1,3 +1,11 @@
+---
+title: "API Fetch call"
+mathjax: true
+layout: post
+categories: github, website
+excerpt: "Both inbound and outbound recalls are represented in the Form3 API by the Payment Recall resource, which is a child resource of the Payment resource the recall is for. The Recall Submission or Recall Admission resources are children of the Recall resource and indicate if a recall is inbound (Admission) or outbound (Submission)."
+---
+
 ## Fetch Recall Decision
 
 Get a single Recall Decision resource.
