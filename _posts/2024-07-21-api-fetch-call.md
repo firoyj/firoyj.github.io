@@ -50,23 +50,23 @@ SOMETIMES
 *object*  
 Information around the Agent who has taken charges in relation to the recall.
 
-<details open markdown="1">
+<details markdown="1">
   <summary>Show children</summary>
   <ul>
     <li><code>.identification</code><br>
       Information about the financial institution.
-      <details open markdown="1">
+      <details markdown="1">
         <summary>Show children</summary>  
         <ul>
           <li><code>bank_id</code><br>
             SOMETIMES<br>
-            "*string*"<br>
+            *string*<br>
             Identification code of the financial institution.
           </li>
           <li><code>bank_id_code</code><br>
-            "SOMETIMES<br>
+            SOMETIMES<br>
             *string*<br>
-            The type of identification provided in `bank_id`. Always `USABA`."
+            The type of identification provided in `bank_id`. Always `USABA`.
           </li>
         </ul>
       </details>
@@ -93,7 +93,7 @@ SOMETIMES<br>
 *object*<br>
 Information about the charges.
 
-<details open markdown="1">
+<details markdown="1">
   <summary>Show children</summary>  
   <ul>
     <li><code>amount</code><br>
