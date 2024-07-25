@@ -1,0 +1,80 @@
+---
+title: "Amazon SQS"
+mathjax: true
+layout: post
+categories: github, website
+excerpt: "To be notified of incoming transactions and other asynchronous events, Form3 uses a notification mechanism that allows you to specify a webhook URL or your own Amazon SQS queue and register them for specific types of events.<br><br>This section details the required steps to set up a connection with Amazon SQS queues."
+---
+
+## Event Notifications
+
+### Overview
+
+In order to notify you of incoming transactions and other asynchronous events, we use a notification mechanism that allows you to specify a webhook URL or your own Amazon SQS queue and register them for specific types of events.
+
+>**Please Note:<br>**
+>This feature is designed to help you monitor resources across the entire Form3 API. Some examples and parameters in this section might not apply to single-scheme integration.
+
+Whenever a corresponding event occurs in the system, we will call the webhook or post to the queue.
+
+The subscription resource allows you to manage these notification endpoints and subscribe, cancel and query existing subscriptions.
+
+Note that you can set up a maximum of 150 notification endpoints of either type `http` or `queue` and filter across a number of different [events](https://www.api-docs.form3.tech/api/schemes/bacs/event-notifications/create-a-subscription). If you have more than 150 subscriptions you will not be able to create new subscriptions but you can update existing subscriptions or delete them to create more.
+
+We generally recommend using webhooks over proprietary queues, as webhooks are not dependent on the cloud provider.
+
+All notifications are cryptographically signed, allowing you to verify they have been sent by Form3. See [our tutorial](https://www.api-docs.form3.tech/api/tutorials/event-notifications/verify-event-notifications) for more information on how to validate the signature of a notification.
+
+## SQS Setup
+
+This section details the required steps to set up a connection with Amazon SQS queues.
+
+You can either use the [AWS console](https://aws.amazon.com/console/)  or the [awscli tool](https://aws.amazon.com/cli/) to set up your queue.
+
+Contact Form3 to obtain the values of the `AWS_ACCOUNT_ID` and `AWS_REGION` variables mentioned below for the Form3 environment you're using.
+
+`AWS_QUEUE_URL` is the URL of your SQS queue in which the notification messages should be posted.
+
+1. Using your AWS account, create a SQS queue. This call returns the URL of the new queue:
+
+```
+aws sqs create-queue --queue-name acme-co --region AWS_REGION
+```
+
+Note that the command above sets the message size limit to the default maximum value. We do not recommend using a smaller message size limit than the maximum.
+
+2. Add the required permission to the queue:
+
+```
+aws sqs add-permission --aws-account-ids AWS_ACCOUNT_ID --actions SendMessage --queue-url AWS_QUEUE_URL --label foo --region AWS_REGION
+```
+
+For more information about AWS permissions, see [here](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_policy-examples.html#example-delegate-xaccount-SQS).
+
+## SQS with Server-Side Encryption
+
+1. In addition to the above steps, set the SQS queue to use an AWS KMS Customer Master Key (CMK).
+
+2. Login to the [AWS console](https://aws.amazon.com/console/), navigate to `KMS`, select `Customer Managed Keys`, select the encryption key that your notification queue is using, go to the `Key Policy` tab and select edit. Append the following statement block into the existing policy AWS created for you:
+
+```
+{
+     "Sid": "Enable Form3",
+     "Effect": "Allow",
+     "Principal": {
+         "AWS": "arn:aws:iam::AWS_ACCOUNT_ID:root"
+     },
+     "Action": [
+         "kms:Decrypt",
+         "kms:GenerateDataKey"
+     ],
+     "Resource": "*"
+}
+```
+
+Contact Form3 to obtain the `AWS_ACCOUNT_ID` in the call above.
+
+This enables the Form3 notification service to send messages to the encrypted SQS queue.
+
+3. Your service that consumes the SQS queue will also need the same KMS permissions to read the messages.
+
