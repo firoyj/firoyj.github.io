@@ -80,9 +80,8 @@ In addition to the above steps:
 }
 ```
 
-> Contact Form3 to obtain the `AWS_ACCOUNT_ID` shown in the above call.
+Contact Form3 to obtain the `AWS_ACCOUNT_ID` shown in the above call.
 
 This enables the Form3 notification service to send messages to the encrypted SQS queue.
 
 4. Your service that consumes the SQS queue will also need the same KMS permissions to read the messages.
-
