@@ -11,16 +11,16 @@ You can be notified of incoming transactions and other asynchronous events. For 
 
 ### Overview
 
-You can be notified of incoming transactions and other asynchronous events. For this we use a notification mechanism that allows you to specify a webhook URL or your own Amazon SQS queue to register for specific types of events.
+You can receive notifications for incoming transactions and other asynchronous events using a notification mechanism that allows you to specify a webhook URL or your own Amazon SQS queue. You can register for specific types of events.
 
 >**Please Note:<br>**
->This feature is designed to help you monitor resources across the entire Form3 API. Some examples and parameters in this section may not apply to single-scheme integration.
+>This feature is designed to help you monitor resources across the entire Form3 API. Some examples and parameters in this section may not apply to single-scheme integrations.
 
-Whenever a corresponding event occurs in the system, we will call the webhook or post to the queue.
+Whenever an event occurs in the system, Form3 will either call the webhook or post to the queue.
 
-The [subscription resource](https://www.api-docs.form3.tech/api/schemes/bacs/event-notifications/create-a-subscription) allows you to manage these notification endpoints and subscribe, cancel and query existing subscriptions.
+The [subscription resource](https://www.api-docs.form3.tech/api/schemes/bacs/event-notifications/create-a-subscription) allows you to manage notification endpoints, and subscribe, cancel and query existing subscriptions.
 
-Note that you can set up a maximum of 150 notification endpoints of either `http` or `queue` type, and filter across a number of different [events](https://www.api-docs.form3.tech/api/schemes/bacs/event-notifications/create-a-subscription). If you have more than 150 subscriptions you will not be able to create new subscriptions but you can update existing subscriptions or delete them to create more.
+You can configure a maximum of 150 notification endpoints (either `http` or `queue`) and filter across a number of different [events](https://www.api-docs.form3.tech/api/schemes/bacs/event-notifications/create-a-subscription). If you exceed this limit of 150 subscriptions, you will not be able to create new subscriptions but you can update existing subscriptions or delete them to create more.
 
 We generally recommend using webhooks over proprietary queues, as webhooks are not dependent on the cloud provider.
 
@@ -42,7 +42,7 @@ Contact Form3 to obtain the values of the `AWS_ACCOUNT_ID` and `AWS_REGION` vari
 aws sqs create-queue --queue-name acme-co --region AWS_REGION
 ```
 
-Note that the command above sets the message size limit to the default maximum value. We do not recommend using a smaller message size limit than the maximum.
+This command sets the message size limit to the default maximum value. Note: We recommend using the maximum message size limit.
 
 2. Add the required permission to the queue:
 
@@ -50,18 +50,18 @@ Note that the command above sets the message size limit to the default maximum v
 aws sqs add-permission --aws-account-ids AWS_ACCOUNT_ID --actions SendMessage --queue-url AWS_QUEUE_URL --label foo --region AWS_REGION
 ```
 
-For more information about AWS permissions, see [here](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_policy-examples.html#example-delegate-xaccount-SQS).
+For more details on AWS permissions, see the [AWS documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_policy-examples.html#example-delegate-xaccount-SQS).
 
 ## SQS with Server-Side Encryption
 
 In addition to the above steps:
 
-1.   Set the SQS queue to use an AWS KMS Customer Master Key (CMK).
+1. Set the SQS queue to use an AWS KMS Customer Master Key (CMK).
 
 2. Log in to the [AWS console](https://aws.amazon.com/console/)<br>
      i) Navigate to **KMS**.<br>
      ii) Select **Customer Managed Keys**.<br>
-     iii) Find the encryption key that your notification queue is using.<br>
+     iii) Locate the encryption key used by your notification queue.<br>
      iv) Go to the **Key Policy** tab and select **Edit**.
 
 3. Append the following statement block into the existing policy AWS created for you:
@@ -85,4 +85,4 @@ Contact Form3 to obtain the `AWS_ACCOUNT_ID` shown in the above call.
 
 This enables the Form3 notification service to send messages to the encrypted SQS queue.
 
-4\. Your service that consumes the SQS queue will also need the same KMS permissions to read the messages.
+4\. Ensure your service consuming the SQS queue has the same KMS permissions to read the messages.
