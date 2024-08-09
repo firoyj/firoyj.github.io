@@ -3,7 +3,8 @@ title: "Amazon SQS"
 mathjax: true
 layout: post
 categories: github, website
-excerpt: "Excert from [Form3 API docs](https://www.api-docs.form3.tech/api/schemes/bacs/event-notifications/overview).<br><br>You can be notified of incoming transactions and other asynchronous events. For this we use a notification mechanism that allows you to specify a webhook URL or your own Amazon SQS queue to register for specific types of events.<br><br>This section details the required steps to set up a connection with Amazon SQS queues."
+excerpt: "Excert from [Form3 API docs](https://www.api-docs.form3.tech/api/schemes/bacs/event-notifications/overview).<br><br>
+You can be notified of incoming transactions and other asynchronous events. For this we use a notification mechanism that allows you to specify a webhook URL or your own Amazon SQS queue to register for specific types of events.<br><br>This section details the required steps to set up a connection with Amazon SQS queues."
 ---
 
 ## Event Notifications
@@ -84,4 +85,4 @@ Contact Form3 to obtain the `AWS_ACCOUNT_ID` shown in the above call.
 
 This enables the Form3 notification service to send messages to the encrypted SQS queue.
 
-4. Your service that consumes the SQS queue will also need the same KMS permissions to read the messages.
+4\. Your service that consumes the SQS queue will also need the same KMS permissions to read the messages.
