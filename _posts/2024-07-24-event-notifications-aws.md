@@ -11,7 +11,7 @@ You can be notified of incoming transactions and other asynchronous events. For 
 
 ### Overview
 
-You can receive notifications for incoming transactions and other asynchronous events using a notification mechanism that allows you to specify a webhook URL or your own Amazon SQS queue. You can register for specific types of events.
+You can be notified of incoming transactions and other asynchronous events. For this we use a notification mechanism that allows you to specify a webhook URL or your own Amazon SQS queue to register for specific types of events.
 
 >**Please Note:<br>**
 >This feature is designed to help you monitor resources across the entire Form3 API. Some examples and parameters in this section may not apply to single-scheme integrations.
@@ -64,7 +64,7 @@ In addition to the above steps:
      iii) Locate the encryption key used by your notification queue.<br>
      iv) Go to the **Key Policy** tab and select **Edit**.
 
-3. Append the following statement block into the existing policy AWS created for you:
+3. Append the following statement block into the existing key policy AWS created for you:
 
 ```
 {
@@ -83,6 +83,6 @@ In addition to the above steps:
 
 Contact Form3 to obtain the `AWS_ACCOUNT_ID` shown in the above call.
 
-This enables the Form3 notification service to send messages to the encrypted SQS queue.
+Adding this statement to the key policy enables the Form3 notification service to send messages to the encrypted SQS queue.
 
 4\. Ensure your service consuming the SQS queue has the same KMS permissions to read the messages.
