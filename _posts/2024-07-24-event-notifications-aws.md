@@ -30,19 +30,19 @@ All notifications are cryptographically signed for you to verify they originated
 
 This section details the steps required to set up a connection with Amazon SQS queues.
 
-Use either the [AWS console](https://aws.amazon.com/console/) or the [AWS CLI tool](https://aws.amazon.com/cli/) to set up your queue.
+You can either use the [AWS console](https://aws.amazon.com/console/) or the [AWS CLI tool](https://aws.amazon.com/cli/) to set up your queue.
 
-Contact Form3 to obtain the values of the `AWS_ACCOUNT_ID` and `AWS_REGION` variables for the Form3 environment you're using.
+Contact Form3 to obtain the `AWS_ACCOUNT_ID` and `AWS_REGION` variables for the Form3 environment you're using.
 
-`AWS_QUEUE_URL` is the URL of your SQS queue in which the notification messages should be posted.
+`AWS_QUEUE_URL` is the URL of your SQS queue where the notification messages should be posted.
 
-1. Using your AWS account, create a SQS queue. This call returns the URL of the new queue:
+1. Using your AWS account, create an SQS queue:
 
 ```
 aws sqs create-queue --queue-name acme-co --region AWS_REGION
 ```
 
-This command sets the message size limit to the default maximum value. Note: We do not recommend using a smaller message size limit than the maximum.
+This call returns the URL of the new queue. Note: This command sets the message size limit to the default maximum value. We do not recommend using a smaller message size limit than the maximum.
 
 2. Add the required permission to the queue:
 
