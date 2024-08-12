@@ -3,38 +3,36 @@ title: "Tutorial: Payment Exception Handling"
 mathjax: true
 layout: post
 categories: github, website
-excerpt: "Sending and receiving payments with the Form3 Payments API is quick and simple, but sometimes a payment submission fails. When this happens, the API provides an error message to help identify the cause.<br><br>This tutorial looks at different errors that can occur during a payment submission and explains how to diagnose them."
+excerpt: "Sending and receiving payments with the Form3 Payments API is quick and simple, but sometimes a payment submission fails. When this happens, the API provides an error message to help identify the cause.<br><br>This tutorial looks at common errors that can occur during a payment submission and explains how to diagnose them."
 ---
 
-## Overview
-
-From [Form3 API Docs](https://www.api-docs.form3.tech/api/tutorials/getting-started/payment-exception-handling)
+## Overview: Payment Exception Handling
 
 Sending and receiving payments with the Form3 Payments API is quick and simple, but sometimes a payment submission fails. When this happens, the API provides an error message to help identify the cause.
 
-## Tutorial: Payment Exception Handling
+This tutorial from the [Form3 API Documentation](https://www.api-docs.form3.tech/api/tutorials/getting-started/payment-exception-handling) looks at common errors that can occur during a payment submission and explains how to diagnose them. 
 
-This tutorial looks at different errors that can occur during a payment submission and explains how to diagnose them. This section covers the following topics:
+This section covers the following topics:
 
-- Handling incomplete payment data.
-- Managing incorrect receiving account information.
+- How to handle incomplete payment data.
+- How to manage incorrect receiving account information.
 
 ### Prerequisites
 
 Before you proceed, we recommend that you complete the previous tutorials on sending and receiving payments. Ensure you have the following ready to follow along:
 
-- An organisation ID (contact Form3 to obtain it).
+- An organisation ID (contact Form3 to obtain this).
 - A private-public key pair to authenticate with the Form3 API via HTTP Request Signing.
 - At least one UK sortcode and BIC registered with Form3.
 - Access to the transaction simulator — a sandbox environment for you to simulate transactions in order to test your application.
 
-### Invalid Payment Data
+### 1. Invalid Payment Data
 
 If an outbound payment is created with invalid or incomplete data, it cannot be processed correctly.
 
-### Incorrect Syntax
+### 1.1 Incorrect Syntax
 
-The server responds differently depending on the kind of error. If the JSON syntax is incorrect, the server will send a response with the status `400 Bad Request`. If the syntax is correct, but a field contains invalid data (e.g., the `amount` attribute contains letters), the creation of the resource will fail and an error message will be returned:
+The server responds differently depending on the kind of error. If the JSON syntax is incorrect, the server will respond with a status of `400 Bad Request`. If the syntax is correct, but a field contains invalid data (e.g., the `amount` attribute contains letters), the creation of the resource will fail, and an error message will be returned:
 
 ```javascript
 {
@@ -43,21 +41,23 @@ The server responds differently depending on the kind of error. If the JSON synt
 }
 ```
 
-### Missing Attributes
+### 1.2 Missing Attributes
 
-If the JSON syntax is correct, the payment resource will be created successfully. You can then send the payment by creating a submission resource. However, invalid data may cause the payment submission to fail, resulting in a `delivery_failed` status.
+If the JSON syntax is correct, the payment resource will be created successfully. You can then submit the payment by creating a submission resource. However, invalid data may cause the payment submission to fail, resulting in a `delivery_failed` status.
 
-To check the status of the submission, you can use the fetch call for the submission resource itself, you can use audits to see the entire history of the resource, or you can subscribe to the creation event of submission resources to receive a notification whenever a new submission resource is created.
+To check the status of the submission, you can:
 
-Using either of these methods, you can read the `status` attribute of the submission. If the submission has failed, the `status` will say: `delivery_failed`. In this case, the `status_reason` attribute provides further information about the error. If, for example, the `amount` attribute in the payment resource was missing, the status reason says "attributes.amount:may not be null. Value passed was null".
+- Use the fetch call for the submission resource itself.
+- Use audits to see the entire history of the resource.
+- Subscribe to the creation event of submission resources to receive a notification whenever a new submission resource is created.
 
-The status reason will change for different error cases. In case several attributes are missing, it will list all missing fields.
+If the submission has failed, the `status` attribute will show `delivery_failed`. The `status_reason` attribute will provide further information about the error. For example, if the `amount` attribute in the payment resource is missing, the status reason will indicate "attributes.amount:may not be null. Value passed was null".
 
-The example below sends an FPS payment with a missing `amount` field. The first snippet is the body of a `POST` call to `/v1/transaction/payments` to create a Payment resource. It is a complete and correct payment but missing the `amount`:
+The status reason varies according to different error cases. In case several attributes are missing, it will list all missing fields.
 
 ### Example: Creating a Payment Resource Without an Amount Field
 
-Here’s an example of a `POST` request to `/v1/transaction/payments` to create a payment resource. This request is complete except for the missing `amount` field:
+Here’s an example of a `POST` request to `/v1/transaction/payments` to create a payment resource. It is a complete and correct payment but missing the `amount` field:
 
 ```javascript
 {
@@ -94,8 +94,8 @@ Here’s an example of a `POST` request to `/v1/transaction/payments` to create 
 }
 ```
 
-This call returns a `201 Created` HTTP code. To submit the payment, create a Payment Submission resource with the following `POST` request to
-`v1/transaction/payments/d596fa25-6943-4490-b94f-61f4c44a8941/submissions`.
+This call returns a `201 Created` HTTP response, indicating successful payment creation. To submit the payment for processing, create a payment submission resource with the following `POST` request to
+`v1/transaction/payments/d596fa25-6943-4490-b94f-61f4c44a8941/submissions`:
 
 ### Example: Creating a Payment Submission Resource
 
@@ -111,11 +111,13 @@ This call returns a `201 Created` HTTP code. To submit the payment, create a Pay
 
 This call also succeeds with a `201 Created` response.
 
-Now, we check the submission status using `GET` to fetch the following recource on `v1/transaction/payments/d596fa25-6943-4490-b94f-61f4c44a8941/submissions/abf05458-69de-4949-9c5d-8ed3c15d966a`.
+### Checking Submission Status
+
+To check the submission status, use `GET` request to fetch the resource at `v1/transaction/payments/d596fa25-6943-4490-b94f-61f4c44a8941/submissions/abf05458-69de-4949-9c5d-8ed3c15d966a`.
 
 The response will contain an explanation of the error in the `status_reason` attribute.
 
-### Payment Submission Fails Due to Missing Amount Attribute in the Payment Resource
+### Example: Payment Submission Fails Due to Missing Amount Attribute
 
 ```javascript
 {
@@ -143,25 +145,23 @@ The response will contain an explanation of the error in the `status_reason` att
 }
 ```
 
-### Invalid Receiving Account Data
+### 2. Invalid Receiving Account Data
 
-Another problem can occur if all the attributes in the payment resource are correct, but the account number or sort code for the recipient are invalid.
+Another problem can occur if all the attributes in the payment resource are correct, but the account number or sort code for the recipient is invalid.
 
-Since the payment is formally correct, it will be submitted without an error, but an invalid sort code will be flagged by the transaction scheme, resulting in a `delivery_failed` status. Likewise, if the account number is invalid, the receiving bank will reject the payment, and an error message will be relayed back.
+Since the payment is formally correct, it will be submitted without an error, but an invalid sort code will be flagged by the scheme, resulting in a `delivery_failed` status. 
 
-If a non-existing account number is specified, the receiving bank will reject the inbound payment and an error message will be returned.
+Likewise, if a non-existing account number is specified, the receiving bank will reject the inbound payment and an error message will be returned.
 
-In both cases, the `status` attribute of the submission resource will contain the status `delivery_failed`. The `status_reason` attribute in the submission resource will provide more detail on the specific error message, and this varies according to the payment scheme.
+In both scenarios, the `status` attribute of the submission resource will show `delivery_failed`, and the `status_reason` attribute will provide more detail. This varies according to the scheme. For example, the Faster Payments scheme will indicate an unknown account number or invalid sort code with the `status_reason` attribute as "beneficiary-sort-code/account-number-unknown".
 
-For example, an unknown account number or invalid sort code using Faster Payments will be indicated by the `status_reason` attribute as "beneficiary-sort-code/account-number-unknown".
+### 3. Triggering a Rejected Payment
 
-### Triggering a Rejected Payment
+You can use the [transaction simulator](https://www.api-docs.form3.tech/api/staging/transaction-simulator/overview) to create an outbound payment that will be rejected. Referring to this table shows you that sending an FPS payment with an amount of `216.16` in the test environment will trigger a failed delivery with the `status_reason` mentioned above.
 
-You can use the [transaction simulator](https://www.api-docs.form3.tech/api/staging/transaction-simulator/overview) to create an outbound payment that will be rejected. For example, sending an FPS payment with the amount `216.16` in the test environment will trigger a failed delivery with the `status_reason` mentioned above.
+> [See here](https://www.api-docs.form3.tech/api/tutorials/getting-started/send-a-payment) to learn more about sending a payment.
 
-[See here](https://www.api-docs.form3.tech/api/tutorials/getting-started/send-a-payment) to learn more about sending a payment.
-
-Create a new Payment resource and set the `amount` field to `216.16`. Then, create a Payment Submission resource for this Payment.
+Create a new payment resource and set the `amount` field to `216.16`. Then, create a payment submission resource for this payment.
 
 Once the submission has been processed by Form3 and sent to the FPS scheme simulator, the submission status will change to `delivery_failed` and the `status_reason` attribute will contain an error message. Note that some schemes may also provide additional details in the `scheme_status_code` attribute.
 
