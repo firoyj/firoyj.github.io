@@ -3,11 +3,12 @@ title: "Amazon SQS"
 mathjax: true
 layout: post
 categories: github, website
-excerpt: "Excert from [Form3 API docs](https://www.api-docs.form3.tech/api/schemes/bacs/event-notifications/overview).<br><br>
-You can be notified of incoming transactions and other asynchronous events. For this we use a notification mechanism that allows you to specify a webhook URL or your own Amazon SQS queue to register for specific types of events.<br><br>This section details the required steps to set up a connection with Amazon SQS queues."
+excerpt: "You can be notified of incoming transactions and other asynchronous events. For this we use a notification mechanism that allows you to specify a webhook URL or your own Amazon SQS queue to register for specific types of events.<br><br>This section details the required steps to set up a connection with Amazon SQS queues."
 ---
 
 ## Event Notifications
+
+Excert from [Form3 API docs](https://www.api-docs.form3.tech/api/schemes/bacs/event-notifications/overview).
 
 ### Overview
 
