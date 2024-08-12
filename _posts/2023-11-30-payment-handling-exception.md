@@ -3,27 +3,29 @@ title: "Tutorial: Payment Exception Handling"
 mathjax: true
 layout: post
 categories: github, website
-excerpt: "Sending and receiving payments with the Form3 Payments API is quick and simple, but sometimes a payment submission fails for one reason or another. If this happens, the API provides an error message to make it easy to identify the cause of the error.<br><br>This tutorial looks at different errors that can occur during a payment submission and explains how they can be diagnosed."
+excerpt: "Sending and receiving payments with the Form3 Payments API is quick and simple, but sometimes a payment submission fails. When this happens, the API provides an error message to help identify the cause.<br><br>This tutorial looks at different errors that can occur during a payment submission and explains how to diagnose them."
 ---
 
-# Payment exception handling
+## Overview
 
-Sending and receiving payments with the Form3 Payments API is quick and simple, but sometimes a payment submission fails for one reason or another. If this happens, the API provides an error message to make it easy to identify the cause of the error.
+From [Form3 API Docs](https://www.api-docs.form3.tech/api/tutorials/getting-started/payment-exception-handling)
 
-This tutorial looks at different errors that can occur during a payment submission and explains how they can be diagnosed. This tutorial covers the following topics:
+Sending and receiving payments with the Form3 Payments API is quick and simple, but sometimes a payment submission fails. When this happens, the API provides an error message to help identify the cause.
 
-- What happens if payment data is incomplete
-- What happens if the receiving account data is incorrect
+## Tutorial: Payment Exception Handling
+
+This tutorial looks at different errors that can occur during a payment submission and explains how to diagnose them. This section covers the following topics:
+
+- Handling incomplete payment data.
+- Managing incorrect receiving account information.
 
 ## Prerequisites
 
-It is recommended that you complete the previous tutorials about sending and receiving a payment before reading this one.
+Before you proceed, we recommend that you complete the previous tutorials on sending and receiving payments. Ensure you have the following ready to follow along:
 
-Before getting started, make sure you have the following things ready to follow along:
-
-- An organisation ID. Contact Form3 to obtain it.
+- An organisation ID (contact Form3 to obtain it).
 - A private-public key pair to authenticate with the Form3 API via HTTP Request Signing.
-- At least one UK sortcode and BIC registered with Form3
+- At least one UK sortcode and BIC registered with Form3.
 - Access to the transaction simulator. This is a sandbox environment that you can use to simulate transactions in order to test your application.
 
 ## Invalid Payment Data
