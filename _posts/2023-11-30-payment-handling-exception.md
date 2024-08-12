@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Payment exception handling"
+title: "Tutorial: Payment Exception Handling"
 mathjax: true
 layout: post
 categories: github, website
