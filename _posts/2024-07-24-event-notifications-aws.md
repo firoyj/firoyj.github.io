@@ -1,5 +1,5 @@
 ---
-title: "Amazon SQS"
+title: "API Docs: Amazon SQS"
 mathjax: true
 layout: post
 categories: github, website
@@ -22,8 +22,6 @@ Whenever an event occurs in the system, Form3 will either call the webhook or po
 The [subscription resource](https://www.api-docs.form3.tech/api/schemes/bacs/event-notifications/create-a-subscription) allows you to manage notification endpoints, and subscribe, cancel and query existing subscriptions.
 
 You can configure a maximum of 150 notification endpoints (either `http` or `queue`) and filter across a number of different [events](https://www.api-docs.form3.tech/api/schemes/bacs/event-notifications/create-a-subscription). If you exceed this limit of 150 subscriptions, you will not be able to create new subscriptions but you can update existing subscriptions or delete them to create more.
-
-We generally recommend using webhooks over proprietary queues, as webhooks are not dependent on a cloud provider.
 
 All notifications are cryptographically signed for you to verify they originated from Form3. See our [tutorial](https://www.api-docs.form3.tech/api/tutorials/event-notifications/verify-event-notifications) for how to validate a notification's signature.
 
