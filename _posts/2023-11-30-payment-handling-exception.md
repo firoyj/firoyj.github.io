@@ -32,7 +32,10 @@ If an outbound payment is created with invalid or incomplete data, it cannot be 
 
 ### 1.1 Incorrect Syntax
 
-The server responds differently depending on the kind of error. If the JSON syntax is incorrect, the server will respond with a status of `400 Bad Request`. If the syntax is correct, but a field contains invalid data (e.g., the `amount` attribute contains letters), the creation of the resource will fail, and an error message will be returned:
+The server responds differently according to the type of error. 
+
+- If the JSON syntax is incorrect, the server will respond with a status of `400 Bad Request`.
+- If the syntax is correct, but a field contains invalid data (e.g., the `amount` attribute contains letters), the resource creation will fail and an error message will be returned:
 
 ```javascript
 {
@@ -53,7 +56,7 @@ To check the status of the submission, you can:
 
 If the submission has failed, the `status` attribute will show `delivery_failed`. The `status_reason` attribute will provide further information about the error. For example, if the `amount` attribute in the payment resource is missing, the status reason will indicate "attributes.amount:may not be null. Value passed was null".
 
-The status reason varies according to different error cases. In case several attributes are missing, it will list all missing fields.
+The status reason varies according to different error cases. If several attributes are missing, it will list all missing fields.
 
 ### Example: Creating a Payment Resource Without an Amount Field
 
@@ -153,17 +156,19 @@ Since the payment is formally correct, it will be submitted without an error, bu
 
 Likewise, if a non-existing account number is specified, the receiving bank will reject the inbound payment and an error message will be returned.
 
-In both scenarios, the `status` attribute of the submission resource will show `delivery_failed`, and the `status_reason` attribute will provide more detail. This varies according to the scheme. For example, the Faster Payments (FPS) scheme will indicate an unknown account number or invalid sort code with the `status_reason` attribute as "beneficiary-sort-code/account-number-unknown".
+In both scenarios, the `status` attribute will show `delivery_failed`, and the `status_reason` attribute will provide more detail, which varies according to the scheme. For example, the Faster Payments (FPS) scheme will indicate an unknown account number or invalid sort code with the `status_reason` attribute as "beneficiary-sort-code/account-number-unknown".
 
 ### 3. Triggering a Rejected Payment
 
-Refer to the [transaction simulator](https://www.api-docs.form3.tech/api/staging/transaction-simulator/overview/fps-direct-simulator) table to see the values for outbound payments that will result in rejected payments. You can see in the table that sending an FPS payment with amount `216.16` will trigger a failed delivery with the `status_reason` "beneficiary-sort-code/account-number-unknown".
+Refer to the [transaction simulator](https://www.api-docs.form3.tech/api/staging/transaction-simulator/overview/fps-direct-simulator) table to see the values for outbound payments that will result in rejected payments. You can see in the table that sending an FPS payment with amount `216.16` will trigger a failed delivery with the same `status_reason` mentioned above: "beneficiary-sort-code/account-number-unknown".
 
 > [See here](https://www.api-docs.form3.tech/api/tutorials/getting-started/send-a-payment) to learn more about sending a payment.
 
-Create a new payment resource and set the `amount` field to `216.16`. Then, create a payment submission resource for this payment.
+- Create a new payment resource and set the `amount` field to `216.16`.
+- Create a payment submission resource for this payment.
+- Once the submission has been processed by Form3 and sent to the FPS scheme simulator, the submission status will change to `delivery_failed` and the `status_reason` attribute will contain an error message.
 
-Once the submission has been processed by Form3 and sent to the FPS scheme simulator, the submission status will change to `delivery_failed` and the `status_reason` attribute will contain an error message. Note that some schemes may also provide additional details in the `scheme_status_code` attribute.
+Note: some schemes may also provide additional details in the `scheme_status_code` attribute.
 
 ### Example: Payment Submission Failed Due to Unknown Sort Code or Account Number
 
