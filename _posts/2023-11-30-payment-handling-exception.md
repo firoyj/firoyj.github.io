@@ -153,11 +153,11 @@ Since the payment is formally correct, it will be submitted without an error, bu
 
 Likewise, if a non-existing account number is specified, the receiving bank will reject the inbound payment and an error message will be returned.
 
-In both scenarios, the `status` attribute of the submission resource will show `delivery_failed`, and the `status_reason` attribute will provide more detail. This varies according to the scheme. For example, the Faster Payments scheme will indicate an unknown account number or invalid sort code with the `status_reason` attribute as "beneficiary-sort-code/account-number-unknown".
+In both scenarios, the `status` attribute of the submission resource will show `delivery_failed`, and the `status_reason` attribute will provide more detail. This varies according to the scheme. For example, the Faster Payments (FPS) scheme will indicate an unknown account number or invalid sort code with the `status_reason` attribute as "beneficiary-sort-code/account-number-unknown".
 
 ### 3. Triggering a Rejected Payment
 
-You can use the [transaction simulator](https://www.api-docs.form3.tech/api/staging/transaction-simulator/overview) to create an outbound payment that will be rejected. Referring to this table shows you that sending an FPS payment with an amount of `216.16` in the test environment will trigger a failed delivery with the `status_reason` mentioned above.
+Refer to the [transaction simulator](https://www.api-docs.form3.tech/api/staging/transaction-simulator/overview/fps-direct-simulator) table to see the values for outbound payments that will result in rejected payments. You can see in the table that sending an FPS payment with amount `216.16` will trigger a failed delivery with the `status_reason` "beneficiary-sort-code/account-number-unknown".
 
 > [See here](https://www.api-docs.form3.tech/api/tutorials/getting-started/send-a-payment) to learn more about sending a payment.
 
