@@ -14,7 +14,7 @@ A native English technical communicator, I started my career as an architect and
 
 Recognizing that software is eating the world, I shifted my focus to this exciting space. I'm passionate about translating cutting-edge technology into clear, accessible language.
 
-Currently preparing for the AWS SysOps Administrator exam, I've also learned some basics of Golang, React, and Solidity to be able to provide better documentation. Additionally, I'm engaged in DevOps processes, involving tools such as Kubernetes, Docker, Terraform, and GitHub Actions. I've documented internal how-to guides and other support material.
+Currently preparing for the AWS SysOps Administrator exam, I've also learned some basics of Golang, React, and Solidity to be able to provide better documentation. I've been actively engaged in DevOps processes, documenting such as like Kubernetes, Docker, Terraform, and GitHub Actions.
 
 Residing in Coimbra, Portugal, I spend my spare time hiking, exploring museums, and discovering street cafes.
 
