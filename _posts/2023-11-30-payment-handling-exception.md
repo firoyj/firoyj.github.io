@@ -32,10 +32,7 @@ If an outbound payment is created with invalid or incomplete data, it cannot be 
 
 ### 1.1 Incorrect Syntax
 
-The server responds differently according to the type of error. 
-
-- If the JSON syntax is incorrect, the server will respond with a status of `400 Bad Request`.
-- If the syntax is correct, but a field contains invalid data (e.g., the `amount` attribute contains letters), the resource creation will fail and an error message will be returned:
+The server responds differently according to the type of error. If the JSON syntax is incorrect, the server will respond with a status of `400 Bad Request`. Whereas, if the syntax is correct, but a field contains invalid data (e.g., the `amount` attribute contains letters), the resource creation will fail and an error message will be returned:
 
 ```javascript
 {
