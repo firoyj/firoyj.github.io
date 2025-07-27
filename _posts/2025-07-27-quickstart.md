@@ -27,6 +27,8 @@ Before sending your first API call, make sure you have:
 
 If you're missing any of the above, contact your Integration Lead. For more setup details on how to manage credentials, configure IP whitelisting, and enforce MFA, see Security and access control.
 
+---
+
 ## Key terms you'll use in this guide
 
 Before we walk through your first API call, these are a few terms you'll see in the examples. You don’t need to know everything about them yet, just enough to follow along. These are the core objects the Fortris API works with:
@@ -120,6 +122,8 @@ Use the **current UTC timestamp in milliseconds** (for example, `1720100123456`)
 Every request to the Fortris API must be securely signed to prove it's authentic and hasn't been tampered with in transit.
 
 The signature is a cryptographic **HMAC-SHA512 hash**, calculated using your **decrypted secret key** and the request data. It's included in the `Signature` header of every API call, and is required for access.
+
+---
 
 ## How to decrypt your secret key
 
