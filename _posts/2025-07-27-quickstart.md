@@ -1,6 +1,6 @@
 > ## Background to writing Quickstart<br>
 > When I wrote this guide, I had a specific user in mind: "Joe" is a junior developer with a heavy backlog, not enough hours in the day, and a lot riding on getting this integration done quickly. Maybe he didn’t sleep well. Maybe his manager is stressed too. I wanted this guide to feel like a helping hand, not another burden. My goal was to make every step fast, clear and reassuring, so Joe can get the integration done and move on with his other priorities.
-> This Quickstart was part of a documentation package to overhaul the old API documentation you can see [here](/assets/img/old-api-docs.pdf)
+> This Quickstart was part of a documentation package to overhaul the old API documentation you can see [here](https://docs.fortris.com/)
 
 # Quickstart
 
