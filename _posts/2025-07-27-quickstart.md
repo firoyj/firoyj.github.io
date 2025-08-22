@@ -3,11 +3,11 @@ title: "Quickstart"
 mathjax: true
 layout: post
 categories: github, website
-excerpt: "Welcome. If you're new to the Fortris API, this guide will help you make your first successful API call in under five minutes.
+excerpt: "Welcome. If you're new to the Fortris API, this guide will help you make your first successful API call in under five minutes.<br><br>
 
-You'll use **test credentials** and a **dedicated test account** within our production environment — giving you access to real endpoints in a secure, controlled environment.
+You'll use test credentials and a dedicated test account within our production environment, giving you access to real endpoints in a secure, controlled environment.<br><br>
 
-All requests are **cryptographically signed** using HMAC. To access the API, your IP address must be whitelisted. Contact your Fortris Integration Lead to confirm your setup."
+All requests are cryptographically signed using HMAC. To access the API, your IP address must be whitelisted. Contact your Fortris Integration Lead to confirm your setup."
 ---
 
 > ## Background to writing Quickstart<br>
